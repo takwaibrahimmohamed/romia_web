@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Room AI – AI Interior Designer – Try for free</title>
+    <meta name="description" content="Try out 40+ interior design styles for your home. No downloads or installs required. Free to try." />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:title" content="Room AI" />
+    <meta property="og:description" content="Restyle your room with AI – Try for free" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="836" />
+    <meta property="og:type" content="product" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@roomai_com" />
+    <meta name="twitter:creator" content="@marckohlbrugge" />
+    <meta name="twitter:title" content="Room AI" />
+    <meta name="twitter:description" content="Restyle your room with AI – Try for free" />
+    <meta name="url" content="https://roomai.com/" />
+    <meta property="og:image" content="https://roomai.com/assets/social/twitter-card-029ec5c3a180e9039d3c3fcfe302be9d85cb8fc2ce3073ee8ab040393c018181.png" />
+    <meta property="twitter:image" content="https://roomai.com/assets/social/twitter-card-029ec5c3a180e9039d3c3fcfe302be9d85cb8fc2ce3073ee8ab040393c018181.png" />
+    <meta property="og:video" content="https://roomai.com/assets/roomai-27316d5f36165214a9364eb63c0117890207f895be030a898962d746731afc8e.mp4" type="video/mp4" width="1280" height="1016" />
+    <link rel="canonical" href="https://roomai.com/" />
+    <link rel="icon" type="image/x-icon" href="https://roomai.com/assets/favicon-1c045dbfe155740a64b3f6ee20f32bfbd3256845d2e21d12795e7cd73bb55ac5.ico" />
+    <link href="https://roomai.com/assets/apple-touch-icon-d3465bbf1f672485304b1b9c17be0c575c1f85e56c09d04617260e1729e4a7d5.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="https://roomai.com/assets/apple-touch-icon-120x120-21fa757db4cd7c6ad2fd8d6f8c16aa134c67ca0462a53eb7233dcc0616532801.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="https://roomai.com/assets/favicon-32x32-9b9438298fe6ecc438c4768c363530bf9a5612c119782c0dee1db3b02a798cef.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="https://roomai.com/assets/favicon-16x16-5acdaa537d0d52a77be045b20a6f20bb73e4e6b1d4d0e324ba931b2403285ee5.png" rel="icon" sizes="16x16" type="image/png">
+    <link rel="preload" href="https://roomai.com/assets/polysans/neutral-f9189954098a15413d14187780f6d96e484af26c18b09fcbffa64b3f577506b2.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://roomai.com/assets/polysans/median-2cc4db87b0b1e35537d21bd9e96dd5b05c3ed677870f946cad942bb27ab5e748.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://roomai.com/assets/polysans/bulky-3b3d00b133c63cdc3b85421f2c923c2edb578af9e27c3c5f2f9ec7981170b373.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://roomai.com/assets/kalam/regular-edbf5950cd8c859ace6e0e29b9372e53cef71cba0e900a47cd9f5c55ddea2f50.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="e8WCIm-akAE48UBeb2S2UsEm4Jsm5pZKt3zFJikHz7_h-r6BUHq6kreazfWx7bcsPtoCNjLerUc6lkkxM-NcQg" />
+    <link rel="stylesheet" href="https://roomai.com/assets/tailwind-8c7beda11f2a43a257a66c83e98cc75b2b084125f8592451d679bdfc30ab8962.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="https://roomai.com/assets/inter-font-95bae7e5d612a17f92905fe8c37ca3885b798e95da071bd3e44d8cf7e6a70291.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="https://roomai.com/assets/application-7097d29b415b95608a77148ab880feb03e410a846cd92b37bc1a614ff3b68a15.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{ "imports": { "application": "https://roomai.com/assets/application-148ad0fd22331e553c7b7dab43b8d60226ba2f2506d98fd1cbd4ae490c049715.js", "@hotwired/turbo-rails": "https://roomai.com/assets/turbo.min-ea591e8a3d614b8a69205bdbc533ce97c24c328002ed5b27c50c31ebfd664bef.js",
+        "@hotwired/stimulus": "https://roomai.com/assets/stimulus.min-e6c8abed9ee6544dc446ae5d59da0036d2746c3297672bfac90f9c29b4f00be0.js", "@hotwired/stimulus-loading": "https://roomai.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+        "minimasonry": "https://ga.jspm.io/npm:minimasonry@1.3.2/build/minimasonry.esm.js", "autosize": "https://ga.jspm.io/npm:autosize@6.0.1/dist/autosize.esm.js", "@rails/activestorage": "https://roomai.com/assets/fixed-activestorage.esm-f2e55e0f1d68c6081e7c735a76cd5fd95ffa1fdc1fbc5a3be9d251cb6294c8c4.js",
+        "stimulus-use": "https://ga.jspm.io/npm:stimulus-use@0.52.0/dist/index.js", "canvas-confetti": "https://ga.jspm.io/npm:canvas-confetti@1.9.0/dist/confetti.module.mjs", "ev-emitter": "https://ga.jspm.io/npm:ev-emitter@2.1.2/ev-emitter.js", "imagesloaded":
+        "https://ga.jspm.io/npm:imagesloaded@5.0.0/imagesloaded.js", "ahoy": "https://roomai.com/assets/ahoy-d491dff1db4cfab8109cffd2f55ede665dbf8e5326c4a305a7508e7277210071.js", "local-time": "https://ga.jspm.io/npm:local-time@2.1.0/app/assets/javascripts/local-time.js",
+        "controllers/application": "https://roomai.com/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js", "controllers/auto_submit_form_controller": "https://roomai.com/assets/controllers/auto_submit_form_controller-1d0f54f317ea16d58ec618f62a741c34f66b7a93c369509c17bc05ebee643963.js",
+        "controllers/autoclick_controller": "https://roomai.com/assets/controllers/autoclick_controller-f49e76270a036a469c8bbbc32ebc5bc4abb0b3e9291754485621346281f6d0c5.js", "controllers/autosize_controller": "https://roomai.com/assets/controllers/autosize_controller-8d0652942e75fb3d3d76d9b57ae520aefae32f746c8275d0a3153cb23945a2ce.js",
+        "controllers/color_palettes_controller": "https://roomai.com/assets/controllers/color_palettes_controller-b2be3912d6938830c48a5e6c6dd1210516ee9c7ab9889bf15eb08ebffe5400ad.js", "controllers/comparison_slider_controller": "https://roomai.com/assets/controllers/comparison_slider_controller-767c949f2ae35728a63d038c49ead4ba644741bb8b11de49493d10d9f7307ed5.js",
+        "controllers/confetti_controller": "https://roomai.com/assets/controllers/confetti_controller-4086c428fd747bebd48e0aeed7f2f1501f8971a3343e01bcd70e26c590826d36.js", "controllers/grid_controller": "https://roomai.com/assets/controllers/grid_controller-626361685a17afd400bbbdb2dea744e3258efb7662fb61fc092ce2a749dbe64c.js",
+        "controllers/hello_controller": "https://roomai.com/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js", "controllers/image_dimensions_controller": "https://roomai.com/assets/controllers/image_dimensions_controller-c78da140c005c88c7ad6eaa3a44afffd4492921e2a02a9f99e9923afc389da3e.js",
+        "controllers/image_loader_controller": "https://roomai.com/assets/controllers/image_loader_controller-32ab33bea6f85bfdad4838f8e32434f7f938a41266facb5621124048ff446f83.js", "controllers/image_preview_controller": "https://roomai.com/assets/controllers/image_preview_controller-ff91fc30777c58d3c4fb3c7557e93574516aca648d8a9a286e076df8d9f9ae72.js",
+        "controllers": "https://roomai.com/assets/controllers/index-78fbd01474398c3ea1bffd81ebe0dc0af5146c64dfdcbe64a0f4763f9840df28.js", "controllers/limit_checkboxes_controller": "https://roomai.com/assets/controllers/limit_checkboxes_controller-7e151ddcba07e299c3ed549093fe007356dffce5fa63baf47ac9d9814d72260e.js",
+        "controllers/masonry_controller": "https://roomai.com/assets/controllers/masonry_controller-238c041b2a569e1356e763ef43a557cb55000c60bea785965af64e6b7880dc5b.js", "controllers/native_sharing_controller": "https://roomai.com/assets/controllers/native_sharing_controller-05f530851bd7d5643a834d3d47de3dc7bd9da19609c00899392372a54881b7ab.js",
+        "controllers/pricing_controller": "https://roomai.com/assets/controllers/pricing_controller-533f62c28cd7704f098428c6c15e2f9e5bfe54bf7eec6230e8e643121b467d7b.js", "controllers/query_count_controller": "https://roomai.com/assets/controllers/query_count_controller-0ae43220d61c92c71c4dca7085c56b7c0d0144080c40877f2143f7d02bf09fb7.js",
+        "controllers/quotes_controller": "https://roomai.com/assets/controllers/quotes_controller-05decee35ae1a78815a58275bc799106cc44f71a08562cd505f53d02ad82760e.js", "controllers/range_slider_controller": "https://roomai.com/assets/controllers/range_slider_controller-f6d82fd7ad8ac1cb256bfe38d7b9a059d4d66efc0aa9c8147597b97f9251c174.js",
+        "controllers/remove_element_controller": "https://roomai.com/assets/controllers/remove_element_controller-98eec67ee9eb16068a74cc567f6b4d6f3728d5575d6018affba3371b2230f2ae.js", "controllers/responsive_grid_controller": "https://roomai.com/assets/controllers/responsive_grid_controller-56f4de1559128e5722f2b98051a384332b75dd2102e44961906399bce6bcf9dc.js",
+        "controllers/reveal_controller": "https://roomai.com/assets/controllers/reveal_controller-cf0de1af21c82b1e45d5f00d03b8ae8e3bb3884c859e0ce4fc9a96faa8302e2f.js", "controllers/sticky_controller": "https://roomai.com/assets/controllers/sticky_controller-ca5aae052b30f150e88bb362d83f217c99f234711d934eaf846380608fa72264.js",
+        "controllers/submit_form_controller": "https://roomai.com/assets/controllers/submit_form_controller-9d2923e1805ea9595d0cfec971e7eb64e73cd9cd780ac1c46d13095545533410.js", "controllers/submit_shortcut_controller": "https://roomai.com/assets/controllers/submit_shortcut_controller-37f1059367fdc66d30b8190d5eb65fa806c45c8bec8cc622643d4a0d6a637c1c.js",
+        "controllers/sync_videos_controller": "https://roomai.com/assets/controllers/sync_videos_controller-4d4f74b2e04d3b06797af00d5ee3c27b37ffb19c68f66f04d95acc2816ff1f7d.js", "controllers/timed_toggle_controller": "https://roomai.com/assets/controllers/timed_toggle_controller-22dad9b73286c1f77a9b4b95d0f081e2d5e0d1ba6f3158055b482e88ad7aa2d2.js",
+        "controllers/tracking_gradient_controller": "https://roomai.com/assets/controllers/tracking_gradient_controller-9d5b6cb69a0089a4582e4ed8a07d1637153747be5ffddea01443a84d88263fab.js", "controllers/turbo_modal_controller": "https://roomai.com/assets/controllers/turbo_modal_controller-f58982b2915f767949245651ed082e4fa51f003f38ef50b1f64fa8b877dec82b.js",
+        "controllers/wizard_controller": "https://roomai.com/assets/controllers/wizard_controller-a1fd4038f64ba4d468de5d270336898957223cf0e407294be485087b245ceefc.js" } }
+    </script>
+    <link rel="modulepreload" href="https://roomai.com/assets/application-148ad0fd22331e553c7b7dab43b8d60226ba2f2506d98fd1cbd4ae490c049715.js">
+    <link rel="modulepreload" href="https://roomai.com/assets/turbo.min-ea591e8a3d614b8a69205bdbc533ce97c24c328002ed5b27c50c31ebfd664bef.js">
+    <link rel="modulepreload" href="https://roomai.com/assets/stimulus.min-e6c8abed9ee6544dc446ae5d59da0036d2746c3297672bfac90f9c29b4f00be0.js">
+    <link rel="modulepreload" href="https://roomai.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js">
+    <script src="https://roomai.com/assets/es-module-shims.min-8cc3d4f027093fb134c74962db0f0c5da21e61f58fff94e398e2877708c1f54d.js" async="async" data-turbo-track="reload"></script>
+    <script type="module">import "application"</script>
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-532FGWF');
+    </script>
+
+</head>
+
+<body class="bg-gray-950 bg-grid-lines text-white">
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-532FGWF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="min-h-screen flex flex-col">
+        <nav class="flex flex-row xsm:flex-row items-center gap-2 space-between py-2 sm:py-4 px-3 sm:px-6 text-lg border-b border-gray-800 sticky top-0 z-10 backdrop-blur-lg bg-gray-950/80">
+            <h1 class="sm:mr-12 shrink-0">
+                <a class="block" href="index.html"><img alt class="h-6 select-none hidden sm:block" src="https://roomai.com/assets/logo-tm-ee3cfe73454ddb84a39cce589111c734b2251bbbdb54108c55444c5870af8ce6.svg" />
+<img alt class="h-8 select-none block sm:hidden" src="https://roomai.com/assets/icon-5a4237e7e349fd97d9435125e080106222edac5dac4dfb77050ba7f282d2ffeb.svg" />
+</a>
+                <div class="sr-only">Room AI</div>
+            </h1>
+            <div class="hidden mx-auto flex gap-3">
+                <a class="text-gray-400 transition-colors duration-200 hover:text-white py-0 px-2 rounded whitespace-nowrap" href="pricing.html">Pricing</a>
+            </div>
+            <div class="flex items-center gap-2 ml-auto">
+                <a class="ml-auto font-medium text-white transition-colors duration-200 py-1 px-3 rounded border border-gray-700 hover:border-gray-500 hover:bg-gray-800 hover:text-white" href="start.html">Log in</a>
+                <a class="font-medium text-white transition-colors duration-200 py-1 px-3 rounded bg-teal-600 block hover:bg-teal-500 border border-teal-400 hover:border-teal-300" href="start.html">
+                    <div class="hidden sm:block">Design your interior</div>
+                    <div class="block sm:hidden">Start designing</div>
+                </a>
+            </div>
+        </nav>
+        <div class="relative mb-auto">
+            <section class="container mx-auto mb-10 items-center justify-center text-center flex flex-col p-8 sm:p-16">
+                <h2 class="font-polysans text-5xl sm:text-8xl font-extrabold sm:max-w-2xl">
+                    Design your dream home
+                </h2>
+                <h3 class="mt-4 text-2xl sm:text-3xl leading-snug text-gray-200 break-keep max-w-2xl">Turn your ideas into professional interior designs with our easy-to-use <span style="background-size: 200%" class="font-bold bg-clip-text animate-gradient px-2 -mx-2 text-transparent bg-gradient-to-r from-orange-500 via-red-400 to-yellow-500">AI</span>&nbsp;software</h3>
+                <div class="flex gap-4 mt-4 text-lg">
+                    <a class="transition-colors duration-200 block font-medium bg-teal-600 hover:bg-teal-500 border border-teal-500 hover:border-teal-300 rounded px-5 py-2" href="try.html">Try free demo</a>
+                    <a class="transition-colors duration-200 block bg-gray-800 hover:bg-gray-700 rounded text-gray-400 hover:text-gray-300 border border-gray-700 hover:border-gray-500 px-4 py-2" href="pricing.html">See prices</a>
+                </div>
+                <div class="text-base mt-4 text-gray-400">398 other people already tried it today!</div>
+            </section>
+            <section class="isolate">
+                <div class="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-y-0 gap-x-4 mt-2">
+                    <div class="text-white text-xl text-center">Click on a style to try it</div>
+                    <img class="w-14 h-14 text-white scale-y-[-1] translate-y-5 z-10 pointer-events-none" alt src="https://roomai.com/assets/home/arrow-b15526e7156355ddd43f75105f27df50575cfb2be5ea891464aa7a4aeac6661f.svg" />
+                </div>
+                <div class="my-6 mt-2 group flex flex-col gap-4">
+                    <div class="block">
+                        <div class="marqueeWrapper">
+                            <div class="marquee flex gap-4 flex-nowrap animation">
+                                <div class="marquee__group"><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=18"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Rustic Interior Design" srcset="https://resize.imagekit.co/Jos3Crq4AIwllXZu3e2P22j2JMf-OAdVZnBpKkRBb54/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/rustic-58f83f33986fa10a2f002891504c81296699e446a11a22461d92d1bab5b3af5a.jpg 1x, https://resize.imagekit.co/XMJ4bkYh_WRCm9ehVVLJmN2duY9cA6qPfHEQPrRhR54/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/rustic-58f83f33986fa10a2f002891504c81296699e446a11a22461d92d1bab5b3af5a.jpg 2x, https://resize.imagekit.co/BuC0x52CQDgRp2BSC-01bwNfJwj-SSVDw0cUXeoRvNM/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/rustic-58f83f33986fa10a2f002891504c81296699e446a11a22461d92d1bab5b3af5a.jpg 3x" src="https://resize.imagekit.co/Jos3Crq4AIwllXZu3e2P22j2JMf-OAdVZnBpKkRBb54/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/rustic-58f83f33986fa10a2f002891504c81296699e446a11a22461d92d1bab5b3af5a.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Rustic</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=14"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Contemporary Interior Design" srcset="https://resize.imagekit.co/cUrgx5u_b615KoMjpMdeNSWlDe6Feull_-2uArxalmY/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/contemporary-3288c66c06eff8b198e797229388547038b7d625e1a04b3fd4a1ea688b739df2.jpg 1x, https://resize.imagekit.co/bZ8ldVGRIQgQhmnBW9p69_qZ0r1PNt3k5jaLtaRZXj0/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/contemporary-3288c66c06eff8b198e797229388547038b7d625e1a04b3fd4a1ea688b739df2.jpg 2x, https://resize.imagekit.co/FIrICQQFmlUgyL3tJdr7GB_d9KVLJrL8XsjTXRaCSMM/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/contemporary-3288c66c06eff8b198e797229388547038b7d625e1a04b3fd4a1ea688b739df2.jpg 3x" src="https://resize.imagekit.co/cUrgx5u_b615KoMjpMdeNSWlDe6Feull_-2uArxalmY/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/contemporary-3288c66c06eff8b198e797229388547038b7d625e1a04b3fd4a1ea688b739df2.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Contemporary</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=1"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Minimalist Interior Design" srcset="https://resize.imagekit.co/_Bg7N08HirhM471GUHvLR1b0acCqEq4PBqktMnqk0dk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/minimalist-14b86b09fd2c3e6e1d181c6a1ef10ed0bee52c999a282a36f7800e29df62290f.jpg 1x, https://resize.imagekit.co/YTE9BitySKu6nZLiJ_cMbazkDlgNhF9C5z3-5LAqVCU/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/minimalist-14b86b09fd2c3e6e1d181c6a1ef10ed0bee52c999a282a36f7800e29df62290f.jpg 2x, https://resize.imagekit.co/7yAD6h0F3FDPGOV2CVRFj09IsRXDFJWojNUch9Zmviw/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/minimalist-14b86b09fd2c3e6e1d181c6a1ef10ed0bee52c999a282a36f7800e29df62290f.jpg 3x" src="https://resize.imagekit.co/_Bg7N08HirhM471GUHvLR1b0acCqEq4PBqktMnqk0dk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/minimalist-14b86b09fd2c3e6e1d181c6a1ef10ed0bee52c999a282a36f7800e29df62290f.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Minimalist</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=4"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Mid-Century Modern Interior Design" srcset="https://resize.imagekit.co/iQPwdnFkA8ljjCC01-BGp3l_Om74LhGpuHJMQysyOKc/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/mid_century_modern-c8260a971c98f07e4cfe79ce4acd6d6910f503cafdf9dd9a586e65b6b379bb8b.jpg 1x, https://resize.imagekit.co/gfWnxiVX9wAhBLPdtk-fALplXY-xQaY58qSiYz5C4oI/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/mid_century_modern-c8260a971c98f07e4cfe79ce4acd6d6910f503cafdf9dd9a586e65b6b379bb8b.jpg 2x, https://resize.imagekit.co/Yisc5MDS_zwyL4c8EfAYvkNOF_OauegceQHbV1wwGbU/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/mid_century_modern-c8260a971c98f07e4cfe79ce4acd6d6910f503cafdf9dd9a586e65b6b379bb8b.jpg 3x" src="https://resize.imagekit.co/iQPwdnFkA8ljjCC01-BGp3l_Om74LhGpuHJMQysyOKc/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/mid_century_modern-c8260a971c98f07e4cfe79ce4acd6d6910f503cafdf9dd9a586e65b6b379bb8b.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Mid-Century Modern</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=32"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Psychedelic Interior Design" srcset="https://resize.imagekit.co/svIYCjg2z4LgRqw3WHcfJc2aUA2dYpHP5ZZeAnVgI-g/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/psychedelic-ed067f955f7ac9c0748abe614b368023853586cda004eabe52a115155bcd7cd1.jpg 1x, https://resize.imagekit.co/5l98ztjbI-Hr54CM3DtPkvwzIP2B3vV6xmqKHdj7pDs/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/psychedelic-ed067f955f7ac9c0748abe614b368023853586cda004eabe52a115155bcd7cd1.jpg 2x, https://resize.imagekit.co/-P73w3hFA4gReh5ANbTzhKF8mYt2ZQOJfgxneHdUdSE/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/psychedelic-ed067f955f7ac9c0748abe614b368023853586cda004eabe52a115155bcd7cd1.jpg 3x" src="https://resize.imagekit.co/svIYCjg2z4LgRqw3WHcfJc2aUA2dYpHP5ZZeAnVgI-g/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/psychedelic-ed067f955f7ac9c0748abe614b368023853586cda004eabe52a115155bcd7cd1.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Psychedelic</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=31"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Cyberpunk Interior Design" srcset="https://resize.imagekit.co/xyjvmXX-obvCbkls7NaJfpYTcJfHh8Qn-55H21DJBXU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/cyberpunk-5841f3a1ac55c20c9390117428d82afcbc128666200104fe68fdac8b6f82df78.jpg 1x, https://resize.imagekit.co/p2KXTWPrtcpQro_7JaCiRPrBWnISEshkE96mYAYko9o/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/cyberpunk-5841f3a1ac55c20c9390117428d82afcbc128666200104fe68fdac8b6f82df78.jpg 2x, https://resize.imagekit.co/TMQa4KIE_kexaVtkYWIaJ8oaGNcAsKM56E7DPDaUzEM/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/cyberpunk-5841f3a1ac55c20c9390117428d82afcbc128666200104fe68fdac8b6f82df78.jpg 3x" src="https://resize.imagekit.co/xyjvmXX-obvCbkls7NaJfpYTcJfHh8Qn-55H21DJBXU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/cyberpunk-5841f3a1ac55c20c9390117428d82afcbc128666200104fe68fdac8b6f82df78.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Cyberpunk</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=9"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Traditional Interior Design" srcset="https://resize.imagekit.co/GlrOuAzODrjxFjJgjLzr0SWRjmUwRROqI6RAGnsjGEM/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/traditional-20260d20ef1146a36254a13b42870495e13e5d58b8dbeaba591388710b297283.jpg 1x, https://resize.imagekit.co/swd2iDSeNZxGYDXeXeyG4HBiX6uFyH-rW_fJ4k8J6AM/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/traditional-20260d20ef1146a36254a13b42870495e13e5d58b8dbeaba591388710b297283.jpg 2x, https://resize.imagekit.co/9_b7KfKRlyGm4Ivy8EudBiW0Lkj5xfL1eK7KQKXaft0/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/traditional-20260d20ef1146a36254a13b42870495e13e5d58b8dbeaba591388710b297283.jpg 3x" src="https://resize.imagekit.co/GlrOuAzODrjxFjJgjLzr0SWRjmUwRROqI6RAGnsjGEM/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/traditional-20260d20ef1146a36254a13b42870495e13e5d58b8dbeaba591388710b297283.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Traditional</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=3"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Industrial Interior Design" srcset="https://resize.imagekit.co/50a_euPyvRYC1d--KV9GFnVK7IucDPPLet4QU93CpBg/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/industrial-21e6223e7dd16c9ad0acbf59e2d2e714eea2b938093a36bdf6c12a7acc944a26.jpg 1x, https://resize.imagekit.co/-_ggosGrj82XGtA3ta7o6ZrBmUfW0wkdmV_tpayRB5o/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/industrial-21e6223e7dd16c9ad0acbf59e2d2e714eea2b938093a36bdf6c12a7acc944a26.jpg 2x, https://resize.imagekit.co/TYSAyepPN6VImFHtelZoWbBcg0j7Hb6Je4d41rlEJnc/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/industrial-21e6223e7dd16c9ad0acbf59e2d2e714eea2b938093a36bdf6c12a7acc944a26.jpg 3x" src="https://resize.imagekit.co/50a_euPyvRYC1d--KV9GFnVK7IucDPPLet4QU93CpBg/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/industrial-21e6223e7dd16c9ad0acbf59e2d2e714eea2b938093a36bdf6c12a7acc944a26.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Industrial</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a></div>
+                                <div aria_hidden="true" class="marquee__group"><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=18"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Rustic Interior Design" srcset="https://resize.imagekit.co/Jos3Crq4AIwllXZu3e2P22j2JMf-OAdVZnBpKkRBb54/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/rustic-58f83f33986fa10a2f002891504c81296699e446a11a22461d92d1bab5b3af5a.jpg 1x, https://resize.imagekit.co/XMJ4bkYh_WRCm9ehVVLJmN2duY9cA6qPfHEQPrRhR54/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/rustic-58f83f33986fa10a2f002891504c81296699e446a11a22461d92d1bab5b3af5a.jpg 2x, https://resize.imagekit.co/BuC0x52CQDgRp2BSC-01bwNfJwj-SSVDw0cUXeoRvNM/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/rustic-58f83f33986fa10a2f002891504c81296699e446a11a22461d92d1bab5b3af5a.jpg 3x" src="https://resize.imagekit.co/Jos3Crq4AIwllXZu3e2P22j2JMf-OAdVZnBpKkRBb54/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/rustic-58f83f33986fa10a2f002891504c81296699e446a11a22461d92d1bab5b3af5a.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Rustic</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=14"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Contemporary Interior Design" srcset="https://resize.imagekit.co/cUrgx5u_b615KoMjpMdeNSWlDe6Feull_-2uArxalmY/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/contemporary-3288c66c06eff8b198e797229388547038b7d625e1a04b3fd4a1ea688b739df2.jpg 1x, https://resize.imagekit.co/bZ8ldVGRIQgQhmnBW9p69_qZ0r1PNt3k5jaLtaRZXj0/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/contemporary-3288c66c06eff8b198e797229388547038b7d625e1a04b3fd4a1ea688b739df2.jpg 2x, https://resize.imagekit.co/FIrICQQFmlUgyL3tJdr7GB_d9KVLJrL8XsjTXRaCSMM/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/contemporary-3288c66c06eff8b198e797229388547038b7d625e1a04b3fd4a1ea688b739df2.jpg 3x" src="https://resize.imagekit.co/cUrgx5u_b615KoMjpMdeNSWlDe6Feull_-2uArxalmY/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/contemporary-3288c66c06eff8b198e797229388547038b7d625e1a04b3fd4a1ea688b739df2.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Contemporary</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=1"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Minimalist Interior Design" srcset="https://resize.imagekit.co/_Bg7N08HirhM471GUHvLR1b0acCqEq4PBqktMnqk0dk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/minimalist-14b86b09fd2c3e6e1d181c6a1ef10ed0bee52c999a282a36f7800e29df62290f.jpg 1x, https://resize.imagekit.co/YTE9BitySKu6nZLiJ_cMbazkDlgNhF9C5z3-5LAqVCU/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/minimalist-14b86b09fd2c3e6e1d181c6a1ef10ed0bee52c999a282a36f7800e29df62290f.jpg 2x, https://resize.imagekit.co/7yAD6h0F3FDPGOV2CVRFj09IsRXDFJWojNUch9Zmviw/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/minimalist-14b86b09fd2c3e6e1d181c6a1ef10ed0bee52c999a282a36f7800e29df62290f.jpg 3x" src="https://resize.imagekit.co/_Bg7N08HirhM471GUHvLR1b0acCqEq4PBqktMnqk0dk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/minimalist-14b86b09fd2c3e6e1d181c6a1ef10ed0bee52c999a282a36f7800e29df62290f.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Minimalist</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=4"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Mid-Century Modern Interior Design" srcset="https://resize.imagekit.co/iQPwdnFkA8ljjCC01-BGp3l_Om74LhGpuHJMQysyOKc/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/mid_century_modern-c8260a971c98f07e4cfe79ce4acd6d6910f503cafdf9dd9a586e65b6b379bb8b.jpg 1x, https://resize.imagekit.co/gfWnxiVX9wAhBLPdtk-fALplXY-xQaY58qSiYz5C4oI/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/mid_century_modern-c8260a971c98f07e4cfe79ce4acd6d6910f503cafdf9dd9a586e65b6b379bb8b.jpg 2x, https://resize.imagekit.co/Yisc5MDS_zwyL4c8EfAYvkNOF_OauegceQHbV1wwGbU/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/mid_century_modern-c8260a971c98f07e4cfe79ce4acd6d6910f503cafdf9dd9a586e65b6b379bb8b.jpg 3x" src="https://resize.imagekit.co/iQPwdnFkA8ljjCC01-BGp3l_Om74LhGpuHJMQysyOKc/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/mid_century_modern-c8260a971c98f07e4cfe79ce4acd6d6910f503cafdf9dd9a586e65b6b379bb8b.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Mid-Century Modern</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=32"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Psychedelic Interior Design" srcset="https://resize.imagekit.co/svIYCjg2z4LgRqw3WHcfJc2aUA2dYpHP5ZZeAnVgI-g/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/psychedelic-ed067f955f7ac9c0748abe614b368023853586cda004eabe52a115155bcd7cd1.jpg 1x, https://resize.imagekit.co/5l98ztjbI-Hr54CM3DtPkvwzIP2B3vV6xmqKHdj7pDs/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/psychedelic-ed067f955f7ac9c0748abe614b368023853586cda004eabe52a115155bcd7cd1.jpg 2x, https://resize.imagekit.co/-P73w3hFA4gReh5ANbTzhKF8mYt2ZQOJfgxneHdUdSE/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/psychedelic-ed067f955f7ac9c0748abe614b368023853586cda004eabe52a115155bcd7cd1.jpg 3x" src="https://resize.imagekit.co/svIYCjg2z4LgRqw3WHcfJc2aUA2dYpHP5ZZeAnVgI-g/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/psychedelic-ed067f955f7ac9c0748abe614b368023853586cda004eabe52a115155bcd7cd1.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Psychedelic</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=31"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Cyberpunk Interior Design" srcset="https://resize.imagekit.co/xyjvmXX-obvCbkls7NaJfpYTcJfHh8Qn-55H21DJBXU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/cyberpunk-5841f3a1ac55c20c9390117428d82afcbc128666200104fe68fdac8b6f82df78.jpg 1x, https://resize.imagekit.co/p2KXTWPrtcpQro_7JaCiRPrBWnISEshkE96mYAYko9o/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/cyberpunk-5841f3a1ac55c20c9390117428d82afcbc128666200104fe68fdac8b6f82df78.jpg 2x, https://resize.imagekit.co/TMQa4KIE_kexaVtkYWIaJ8oaGNcAsKM56E7DPDaUzEM/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/cyberpunk-5841f3a1ac55c20c9390117428d82afcbc128666200104fe68fdac8b6f82df78.jpg 3x" src="https://resize.imagekit.co/xyjvmXX-obvCbkls7NaJfpYTcJfHh8Qn-55H21DJBXU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/cyberpunk-5841f3a1ac55c20c9390117428d82afcbc128666200104fe68fdac8b6f82df78.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Cyberpunk</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=9"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Traditional Interior Design" srcset="https://resize.imagekit.co/GlrOuAzODrjxFjJgjLzr0SWRjmUwRROqI6RAGnsjGEM/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/traditional-20260d20ef1146a36254a13b42870495e13e5d58b8dbeaba591388710b297283.jpg 1x, https://resize.imagekit.co/swd2iDSeNZxGYDXeXeyG4HBiX6uFyH-rW_fJ4k8J6AM/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/traditional-20260d20ef1146a36254a13b42870495e13e5d58b8dbeaba591388710b297283.jpg 2x, https://resize.imagekit.co/9_b7KfKRlyGm4Ivy8EudBiW0Lkj5xfL1eK7KQKXaft0/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/traditional-20260d20ef1146a36254a13b42870495e13e5d58b8dbeaba591388710b297283.jpg 3x" src="https://resize.imagekit.co/GlrOuAzODrjxFjJgjLzr0SWRjmUwRROqI6RAGnsjGEM/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/traditional-20260d20ef1146a36254a13b42870495e13e5d58b8dbeaba591388710b297283.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Traditional</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=3"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Industrial Interior Design" srcset="https://resize.imagekit.co/50a_euPyvRYC1d--KV9GFnVK7IucDPPLet4QU93CpBg/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/industrial-21e6223e7dd16c9ad0acbf59e2d2e714eea2b938093a36bdf6c12a7acc944a26.jpg 1x, https://resize.imagekit.co/-_ggosGrj82XGtA3ta7o6ZrBmUfW0wkdmV_tpayRB5o/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/industrial-21e6223e7dd16c9ad0acbf59e2d2e714eea2b938093a36bdf6c12a7acc944a26.jpg 2x, https://resize.imagekit.co/TYSAyepPN6VImFHtelZoWbBcg0j7Hb6Je4d41rlEJnc/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/industrial-21e6223e7dd16c9ad0acbf59e2d2e714eea2b938093a36bdf6c12a7acc944a26.jpg 3x" src="https://resize.imagekit.co/50a_euPyvRYC1d--KV9GFnVK7IucDPPLet4QU93CpBg/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/industrial-21e6223e7dd16c9ad0acbf59e2d2e714eea2b938093a36bdf6c12a7acc944a26.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Industrial</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="marqueeWrapper">
+                            <div class="marquee flex gap-4 flex-nowrap animation marquee--reverse">
+                                <div class="marquee__group"><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=17"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Hollywood Regency Interior Design" srcset="https://resize.imagekit.co/AJX39beICHpvgYBwwj5qU9HWNGPPjPLWCxDlTq-u7aQ/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/hollywood_regency-7784b67e50bffe6511e4f64f370c0225928dde0661b33f95171543d79bb01135.jpg 1x, https://resize.imagekit.co/ywIueonlDXjpFTdkZIJUBIRL6j906EbdeXZQTz6yc0o/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/hollywood_regency-7784b67e50bffe6511e4f64f370c0225928dde0661b33f95171543d79bb01135.jpg 2x, https://resize.imagekit.co/REMWSOqV-Ba71BifFQGWAkpkgCnxyRUC2q_12PQWrTk/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/hollywood_regency-7784b67e50bffe6511e4f64f370c0225928dde0661b33f95171543d79bb01135.jpg 3x" src="https://resize.imagekit.co/AJX39beICHpvgYBwwj5qU9HWNGPPjPLWCxDlTq-u7aQ/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/hollywood_regency-7784b67e50bffe6511e4f64f370c0225928dde0661b33f95171543d79bb01135.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Hollywood Regency</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=35"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Candy Land Interior Design" srcset="https://resize.imagekit.co/LM-tXWPh3dHxt4UaVIZzUKI9_d6l4MBX0JHRKihY33Q/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/candy_land-83a6ca030579ce5cfded791f64ce79d701a3f3fbe272d9ffd1fbdc8df1a91c47.jpg 1x, https://resize.imagekit.co/c_ujGqymA4yqbNDKzvGA4YtuUnw-set5WTnTl3MsF74/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/candy_land-83a6ca030579ce5cfded791f64ce79d701a3f3fbe272d9ffd1fbdc8df1a91c47.jpg 2x, https://resize.imagekit.co/sCXUwBwaq6ghaJQCAkmMrN2TE6l-spmVh1epWGXoHik/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/candy_land-83a6ca030579ce5cfded791f64ce79d701a3f3fbe272d9ffd1fbdc8df1a91c47.jpg 3x" src="https://resize.imagekit.co/LM-tXWPh3dHxt4UaVIZzUKI9_d6l4MBX0JHRKihY33Q/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/candy_land-83a6ca030579ce5cfded791f64ce79d701a3f3fbe272d9ffd1fbdc8df1a91c47.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Candy Land</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=33"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Surrealist Interior Design" srcset="https://resize.imagekit.co/ravF6EVeoN8wFVMG-XcOCEPBdZqmwn11IoiQfM0__LU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/surrealist-070039b2ccbdf2aeb26e1ce660087373d5c48637cb27410b14e0f4c65008f5aa.jpg 1x, https://resize.imagekit.co/P9wzuEO-U3l6KnrHOmYNytTlvBLnxVaAk9hUkCUR9tU/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/surrealist-070039b2ccbdf2aeb26e1ce660087373d5c48637cb27410b14e0f4c65008f5aa.jpg 2x, https://resize.imagekit.co/IgPAbUFiyDjue0IVl2jPO-m6iO4a8D-Sr2T1Mg55ilc/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/surrealist-070039b2ccbdf2aeb26e1ce660087373d5c48637cb27410b14e0f4c65008f5aa.jpg 3x" src="https://resize.imagekit.co/ravF6EVeoN8wFVMG-XcOCEPBdZqmwn11IoiQfM0__LU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/surrealist-070039b2ccbdf2aeb26e1ce660087373d5c48637cb27410b14e0f4c65008f5aa.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Surrealist</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=27"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Cosmic Chic Interior Design" srcset="https://resize.imagekit.co/NkUp3XvrkRazm3DpRNY87yR6m60yWDXUkSiVEBOvAkU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/cosmic_chic-c185f1c8d06cbfeb4c702b87275279375f3decd26d02b109be2026679f78828d.jpg 1x, https://resize.imagekit.co/Zx5PW7-czlO6vKOQJEsT0Tz-pBacWcvjFbSx0kArpWg/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/cosmic_chic-c185f1c8d06cbfeb4c702b87275279375f3decd26d02b109be2026679f78828d.jpg 2x, https://resize.imagekit.co/-Oy-Y2C_GHfsPN6cF7oatnyuM7F8bSvyZ4q1XTogC6Y/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/cosmic_chic-c185f1c8d06cbfeb4c702b87275279375f3decd26d02b109be2026679f78828d.jpg 3x" src="https://resize.imagekit.co/NkUp3XvrkRazm3DpRNY87yR6m60yWDXUkSiVEBOvAkU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/cosmic_chic-c185f1c8d06cbfeb4c702b87275279375f3decd26d02b109be2026679f78828d.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Cosmic Chic</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=34"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Post-Apocalyptic Interior Design" srcset="https://resize.imagekit.co/DblSeMViY2UjYxKk_au9ivx50t5V2231ptJPPyRGfbk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/post_apocalyptic-f1a2d88a757a73ac9bd4afab99e4b0d1dc20565262f57e8bba344877d67bc658.jpg 1x, https://resize.imagekit.co/47RrDIusmY6j2gOHNyPrVkmkfSPO1yJedIUmJb7Ld4w/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/post_apocalyptic-f1a2d88a757a73ac9bd4afab99e4b0d1dc20565262f57e8bba344877d67bc658.jpg 2x, https://resize.imagekit.co/P-orc-FRhFAKDIfM1gXr3FnPEZAcVvPnfCNyTXvVOZ8/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/post_apocalyptic-f1a2d88a757a73ac9bd4afab99e4b0d1dc20565262f57e8bba344877d67bc658.jpg 3x" src="https://resize.imagekit.co/DblSeMViY2UjYxKk_au9ivx50t5V2231ptJPPyRGfbk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/post_apocalyptic-f1a2d88a757a73ac9bd4afab99e4b0d1dc20565262f57e8bba344877d67bc658.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Post-Apocalyptic</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=8"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Farmhouse Interior Design" srcset="https://resize.imagekit.co/ieMKhkivhFb5ssp9_98CvKe1Sp_CCgAK5XmpPWDIeOk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/farmhouse-5aaf72b06cdee41537e0ac4015ca1a105421c1a3a3181ea36234e1ba15f43e57.jpg 1x, https://resize.imagekit.co/ZhvJVjY4VKKoNp3xdgbun0xNE5cwMartxw6r4yvQATo/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/farmhouse-5aaf72b06cdee41537e0ac4015ca1a105421c1a3a3181ea36234e1ba15f43e57.jpg 2x, https://resize.imagekit.co/c9FnkD5WXW4HRdtuIqXvoYMlf95ROujfdnlrFQ1GLyE/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/farmhouse-5aaf72b06cdee41537e0ac4015ca1a105421c1a3a3181ea36234e1ba15f43e57.jpg 3x" src="https://resize.imagekit.co/ieMKhkivhFb5ssp9_98CvKe1Sp_CCgAK5XmpPWDIeOk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/farmhouse-5aaf72b06cdee41537e0ac4015ca1a105421c1a3a3181ea36234e1ba15f43e57.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Farmhouse</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=26"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Moroccan Interior Design" srcset="https://resize.imagekit.co/sxww7zJ35m_l0lJ3fuyybLEDqEim4rR3TYEr3uH_AWg/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/moroccan-d8708a1c140c78c156317b3907b64b9806b87c514aaef7b136f44784b39a04b6.jpg 1x, https://resize.imagekit.co/64nrQ42zi3TqqP009Mj_11kUNS4OJW5gnXCCripU5Rc/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/moroccan-d8708a1c140c78c156317b3907b64b9806b87c514aaef7b136f44784b39a04b6.jpg 2x, https://resize.imagekit.co/b8j_psVfqFsNXpfXY6Tz4j6fDpKNjOHgRZN4vghMlzs/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/moroccan-d8708a1c140c78c156317b3907b64b9806b87c514aaef7b136f44784b39a04b6.jpg 3x" src="https://resize.imagekit.co/sxww7zJ35m_l0lJ3fuyybLEDqEim4rR3TYEr3uH_AWg/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/moroccan-d8708a1c140c78c156317b3907b64b9806b87c514aaef7b136f44784b39a04b6.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Moroccan</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=21"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Steampunk Interior Design" srcset="https://resize.imagekit.co/8y1r8lqG97_nNfitpRYVrQZbgnVldr3u6P3Bmzo8WF0/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/steampunk-c3761ae17ccf2b113a85a3b7a1db7d58a87ccbab41e0f0f7b8da2ba366b66727.jpg 1x, https://resize.imagekit.co/iwle5JO2ldKl0caFBafA2msyhccWKeCCASZOutmmngg/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/steampunk-c3761ae17ccf2b113a85a3b7a1db7d58a87ccbab41e0f0f7b8da2ba366b66727.jpg 2x, https://resize.imagekit.co/sASax_lCrrs-jXaDdYXNUz69-fPm86s-ryQD3K74gsg/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/steampunk-c3761ae17ccf2b113a85a3b7a1db7d58a87ccbab41e0f0f7b8da2ba366b66727.jpg 3x" src="https://resize.imagekit.co/8y1r8lqG97_nNfitpRYVrQZbgnVldr3u6P3Bmzo8WF0/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/steampunk-c3761ae17ccf2b113a85a3b7a1db7d58a87ccbab41e0f0f7b8da2ba366b66727.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Steampunk</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a></div>
+                                <div aria_hidden="true" class="marquee__group"><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=17"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Hollywood Regency Interior Design" srcset="https://resize.imagekit.co/AJX39beICHpvgYBwwj5qU9HWNGPPjPLWCxDlTq-u7aQ/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/hollywood_regency-7784b67e50bffe6511e4f64f370c0225928dde0661b33f95171543d79bb01135.jpg 1x, https://resize.imagekit.co/ywIueonlDXjpFTdkZIJUBIRL6j906EbdeXZQTz6yc0o/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/hollywood_regency-7784b67e50bffe6511e4f64f370c0225928dde0661b33f95171543d79bb01135.jpg 2x, https://resize.imagekit.co/REMWSOqV-Ba71BifFQGWAkpkgCnxyRUC2q_12PQWrTk/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/hollywood_regency-7784b67e50bffe6511e4f64f370c0225928dde0661b33f95171543d79bb01135.jpg 3x" src="https://resize.imagekit.co/AJX39beICHpvgYBwwj5qU9HWNGPPjPLWCxDlTq-u7aQ/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/hollywood_regency-7784b67e50bffe6511e4f64f370c0225928dde0661b33f95171543d79bb01135.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Hollywood Regency</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=35"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Candy Land Interior Design" srcset="https://resize.imagekit.co/LM-tXWPh3dHxt4UaVIZzUKI9_d6l4MBX0JHRKihY33Q/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/candy_land-83a6ca030579ce5cfded791f64ce79d701a3f3fbe272d9ffd1fbdc8df1a91c47.jpg 1x, https://resize.imagekit.co/c_ujGqymA4yqbNDKzvGA4YtuUnw-set5WTnTl3MsF74/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/candy_land-83a6ca030579ce5cfded791f64ce79d701a3f3fbe272d9ffd1fbdc8df1a91c47.jpg 2x, https://resize.imagekit.co/sCXUwBwaq6ghaJQCAkmMrN2TE6l-spmVh1epWGXoHik/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/candy_land-83a6ca030579ce5cfded791f64ce79d701a3f3fbe272d9ffd1fbdc8df1a91c47.jpg 3x" src="https://resize.imagekit.co/LM-tXWPh3dHxt4UaVIZzUKI9_d6l4MBX0JHRKihY33Q/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/candy_land-83a6ca030579ce5cfded791f64ce79d701a3f3fbe272d9ffd1fbdc8df1a91c47.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Candy Land</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=33"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Surrealist Interior Design" srcset="https://resize.imagekit.co/ravF6EVeoN8wFVMG-XcOCEPBdZqmwn11IoiQfM0__LU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/surrealist-070039b2ccbdf2aeb26e1ce660087373d5c48637cb27410b14e0f4c65008f5aa.jpg 1x, https://resize.imagekit.co/P9wzuEO-U3l6KnrHOmYNytTlvBLnxVaAk9hUkCUR9tU/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/surrealist-070039b2ccbdf2aeb26e1ce660087373d5c48637cb27410b14e0f4c65008f5aa.jpg 2x, https://resize.imagekit.co/IgPAbUFiyDjue0IVl2jPO-m6iO4a8D-Sr2T1Mg55ilc/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/surrealist-070039b2ccbdf2aeb26e1ce660087373d5c48637cb27410b14e0f4c65008f5aa.jpg 3x" src="https://resize.imagekit.co/ravF6EVeoN8wFVMG-XcOCEPBdZqmwn11IoiQfM0__LU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/surrealist-070039b2ccbdf2aeb26e1ce660087373d5c48637cb27410b14e0f4c65008f5aa.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Surrealist</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=27"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Cosmic Chic Interior Design" srcset="https://resize.imagekit.co/NkUp3XvrkRazm3DpRNY87yR6m60yWDXUkSiVEBOvAkU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/cosmic_chic-c185f1c8d06cbfeb4c702b87275279375f3decd26d02b109be2026679f78828d.jpg 1x, https://resize.imagekit.co/Zx5PW7-czlO6vKOQJEsT0Tz-pBacWcvjFbSx0kArpWg/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/cosmic_chic-c185f1c8d06cbfeb4c702b87275279375f3decd26d02b109be2026679f78828d.jpg 2x, https://resize.imagekit.co/-Oy-Y2C_GHfsPN6cF7oatnyuM7F8bSvyZ4q1XTogC6Y/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/cosmic_chic-c185f1c8d06cbfeb4c702b87275279375f3decd26d02b109be2026679f78828d.jpg 3x" src="https://resize.imagekit.co/NkUp3XvrkRazm3DpRNY87yR6m60yWDXUkSiVEBOvAkU/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/cosmic_chic-c185f1c8d06cbfeb4c702b87275279375f3decd26d02b109be2026679f78828d.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Cosmic Chic</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=34"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Post-Apocalyptic Interior Design" srcset="https://resize.imagekit.co/DblSeMViY2UjYxKk_au9ivx50t5V2231ptJPPyRGfbk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/post_apocalyptic-f1a2d88a757a73ac9bd4afab99e4b0d1dc20565262f57e8bba344877d67bc658.jpg 1x, https://resize.imagekit.co/47RrDIusmY6j2gOHNyPrVkmkfSPO1yJedIUmJb7Ld4w/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/post_apocalyptic-f1a2d88a757a73ac9bd4afab99e4b0d1dc20565262f57e8bba344877d67bc658.jpg 2x, https://resize.imagekit.co/P-orc-FRhFAKDIfM1gXr3FnPEZAcVvPnfCNyTXvVOZ8/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/post_apocalyptic-f1a2d88a757a73ac9bd4afab99e4b0d1dc20565262f57e8bba344877d67bc658.jpg 3x" src="https://resize.imagekit.co/DblSeMViY2UjYxKk_au9ivx50t5V2231ptJPPyRGfbk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/post_apocalyptic-f1a2d88a757a73ac9bd4afab99e4b0d1dc20565262f57e8bba344877d67bc658.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Post-Apocalyptic</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=8"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Farmhouse Interior Design" srcset="https://resize.imagekit.co/ieMKhkivhFb5ssp9_98CvKe1Sp_CCgAK5XmpPWDIeOk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/farmhouse-5aaf72b06cdee41537e0ac4015ca1a105421c1a3a3181ea36234e1ba15f43e57.jpg 1x, https://resize.imagekit.co/ZhvJVjY4VKKoNp3xdgbun0xNE5cwMartxw6r4yvQATo/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/farmhouse-5aaf72b06cdee41537e0ac4015ca1a105421c1a3a3181ea36234e1ba15f43e57.jpg 2x, https://resize.imagekit.co/c9FnkD5WXW4HRdtuIqXvoYMlf95ROujfdnlrFQ1GLyE/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/farmhouse-5aaf72b06cdee41537e0ac4015ca1a105421c1a3a3181ea36234e1ba15f43e57.jpg 3x" src="https://resize.imagekit.co/ieMKhkivhFb5ssp9_98CvKe1Sp_CCgAK5XmpPWDIeOk/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/farmhouse-5aaf72b06cdee41537e0ac4015ca1a105421c1a3a3181ea36234e1ba15f43e57.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Farmhouse</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=26"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Moroccan Interior Design" srcset="https://resize.imagekit.co/sxww7zJ35m_l0lJ3fuyybLEDqEim4rR3TYEr3uH_AWg/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/moroccan-d8708a1c140c78c156317b3907b64b9806b87c514aaef7b136f44784b39a04b6.jpg 1x, https://resize.imagekit.co/64nrQ42zi3TqqP009Mj_11kUNS4OJW5gnXCCripU5Rc/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/moroccan-d8708a1c140c78c156317b3907b64b9806b87c514aaef7b136f44784b39a04b6.jpg 2x, https://resize.imagekit.co/b8j_psVfqFsNXpfXY6Tz4j6fDpKNjOHgRZN4vghMlzs/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/moroccan-d8708a1c140c78c156317b3907b64b9806b87c514aaef7b136f44784b39a04b6.jpg 3x" src="https://resize.imagekit.co/sxww7zJ35m_l0lJ3fuyybLEDqEim4rR3TYEr3uH_AWg/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/moroccan-d8708a1c140c78c156317b3907b64b9806b87c514aaef7b136f44784b39a04b6.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Moroccan</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a><a class="shrink-0 bg-gray-800 relative block overflow-hidden rounded-lg h-48 w-48 group/room_style" href="/try?room_style_ids%5B%5D=21"><img loading="lazy" class="w-full h-full object-cover object-center block" alt="Steampunk Interior Design" srcset="https://resize.imagekit.co/8y1r8lqG97_nNfitpRYVrQZbgnVldr3u6P3Bmzo8WF0/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/steampunk-c3761ae17ccf2b113a85a3b7a1db7d58a87ccbab41e0f0f7b8da2ba366b66727.jpg 1x, https://resize.imagekit.co/iwle5JO2ldKl0caFBafA2msyhccWKeCCASZOutmmngg/rs:fill:220:220/dpr:2/plain/https://roomai.com/assets/styles/steampunk-c3761ae17ccf2b113a85a3b7a1db7d58a87ccbab41e0f0f7b8da2ba366b66727.jpg 2x, https://resize.imagekit.co/sASax_lCrrs-jXaDdYXNUz69-fPm86s-ryQD3K74gsg/rs:fill:220:220/dpr:3/plain/https://roomai.com/assets/styles/steampunk-c3761ae17ccf2b113a85a3b7a1db7d58a87ccbab41e0f0f7b8da2ba366b66727.jpg 3x" src="https://resize.imagekit.co/8y1r8lqG97_nNfitpRYVrQZbgnVldr3u6P3Bmzo8WF0/rs:fill:220:220/dpr:1/plain/https://roomai.com/assets/styles/steampunk-c3761ae17ccf2b113a85a3b7a1db7d58a87ccbab41e0f0f7b8da2ba366b66727.jpg" />
+<div class="select-none absolute inset-0 flex text-center items-start font-medium text-shadow-md leading-5 rounded transition-all duration-200">
+<div class="text-lg px-1 pt-4 pb-8 w-full bg-gradient-to-b from-black/80 via-black/60 to-black/0">Steampunk</div>
+</div>
+<div class="border absolute pointer-events-none w-full inset-0 rounded-lg transition-all duration-200 border-white/30 group-hover/room_style:border-2 group-hover/room_style:border-white"></div>
+</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="grid grid-cols-12 gap-8 gap-y-8 sm:gap-y-16 container mx-auto my-12 p-2">
+                <div class="col-span-12 sm:col-span-6">
+                    <div class=" bg-cyan-975 border-cyan-900 flex relative flex-col rounded-lg text-gray-200 gap-4 h-full overflow-hidden shadow-lg shadow-black border">
+                        <div class="block p-10 pb-0 shrink-0">
+                            <h2 class="text-2xl font-bold text-white mb-4 flex flex-col sm:flex-row items-center gap-3 justify-center sm:text-center">
+                                <div class="block rounded p-1 px-2 bg-cyan-700 border border-cyan-400 text-cyan-100 flex items-center gap-2 text-base font-normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-6">
+<path fill-rule="evenodd" d="M1 8a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 018.07 3h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0016.07 6H17a2 2 0 012 2v7a2 2 0 01-2 2H3a2 2 0 01-2-2V8zm13.5 3a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM10 14a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+</svg>
+                                    <div class="text-white">Restyle</div>
+                                </div>
+                                Transform your existing room
+                            </h2>
+                            <p class="text-gray-300 text-xl sm:text-center"><span class="text-white/90">Upload an image of your room and our AI will restyle it with your chosen design preferences.</span>
+                            </p>
+                        </div>
+                        <div class="block relative overflow-auto scrollbar-hide min-h-64 pt-2 h-full" style="mask-image: linear-gradient(to bottom, transparent, white 0.5rem, white 90%, transparent)">
+                            <div class="relative select-none overflow-hidden aspect-[3/2]" data-controller="comparison-slider">
+                                <img loading="lazy" alt="After" class="relative select-none h-full top-0 object-cover" data-comparison-slider-target="afterImage" srcset="https://resize.imagekit.co/TEAVKEeU-f7V9VO5RzQjTvDH3LbPVOWxVsFhQobN4k4/dpr:1/plain/https://roomai.com/assets/home/restylings/bohemian-47fbc32c5c4f19615b263ef7720fb0ab6a5808e35565b99605bab7bad90ffb68.jpg 1x, https://resize.imagekit.co/xXQMEnwmhE8h3PuG3s8WnuSINRmr-AZCVn1HUDDZua8/dpr:2/plain/https://roomai.com/assets/home/restylings/bohemian-47fbc32c5c4f19615b263ef7720fb0ab6a5808e35565b99605bab7bad90ffb68.jpg 2x, https://resize.imagekit.co/vEphm-eqUQX3C1H_uooIwlpMj4iQXT2DBO_shXa4vCc/dpr:3/plain/https://roomai.com/assets/home/restylings/bohemian-47fbc32c5c4f19615b263ef7720fb0ab6a5808e35565b99605bab7bad90ffb68.jpg 3x"
+                                    src="https://resize.imagekit.co/TEAVKEeU-f7V9VO5RzQjTvDH3LbPVOWxVsFhQobN4k4/dpr:1/plain/https://roomai.com/assets/home/restylings/bohemian-47fbc32c5c4f19615b263ef7720fb0ab6a5808e35565b99605bab7bad90ffb68.jpg" />
+                                <img loading="lazy" alt="Before" class="absolute select-none h-full top-0 object-cover" data-comparison-slider-target="beforeImage" srcset="https://resize.imagekit.co/66TfvCfTvwFdflfJ-CnKGzgsk65GkPeBK60m7Pe_ZEI/dpr:1/plain/https://roomai.com/assets/home/restylings/original-ba019b984db14c1f358962e684f4421fb116795a55085fc98e1e64c28d2c5f06.jpg 1x, https://resize.imagekit.co/v_NLySbGynou7VWkdqMxZB0hvnckBBOwaEJ3KK5H5Zo/dpr:2/plain/https://roomai.com/assets/home/restylings/original-ba019b984db14c1f358962e684f4421fb116795a55085fc98e1e64c28d2c5f06.jpg 2x, https://resize.imagekit.co/840iJhhkhPibsbTsAnLbtyD4pPJmO6OuGoTnWSDIt7Y/dpr:3/plain/https://roomai.com/assets/home/restylings/original-ba019b984db14c1f358962e684f4421fb116795a55085fc98e1e64c28d2c5f06.jpg 3x"
+                                    src="https://resize.imagekit.co/66TfvCfTvwFdflfJ-CnKGzgsk65GkPeBK60m7Pe_ZEI/dpr:1/plain/https://roomai.com/assets/home/restylings/original-ba019b984db14c1f358962e684f4421fb116795a55085fc98e1e64c28d2c5f06.jpg" />
+                                <div class="absolute cursor-pointer flex items-center flex-col left-1/2 top-0 bottom-0 -translate-x-1/2" data-comparison-slider-target="handle">
+                                    <div class="w-0 flex-1 border-r border-white"></div>
+                                    <div class="rounded-full backdrop-blur-sm bg-black/50 h-20 w-3 border border-white" data-comparison-slider-target="handle"></div>
+                                    <div class="w-0 flex-1 border-r border-white"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 sm:col-span-6">
+                    <div class=" bg-pink-975 border-pink-900 flex relative flex-col rounded-lg text-gray-200 gap-4 h-full overflow-hidden shadow-lg shadow-black border">
+                        <div class="block p-10 pb-0 shrink-0">
+                            <h2 class="text-2xl font-bold text-white mb-4 flex flex-col sm:flex-row items-center gap-3 justify-center sm:text-center">
+                                <div class="block rounded p-1 px-2 bg-pink-900 border border-pink-600 text-in-100 flex items-center gap-2 text-base font-normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-6 w-6">
+<path d="M15.98 1.804a1 1 0 00-1.96 0l-.24 1.192a1 1 0 01-.784.785l-1.192.238a1 1 0 000 1.962l1.192.238a1 1 0 01.785.785l.238 1.192a1 1 0 001.962 0l.238-1.192a1 1 0 01.785-.785l1.192-.238a1 1 0 000-1.962l-1.192-.238a1 1 0 01-.785-.785l-.238-1.192zM6.949 5.684a1 1 0 00-1.898 0l-.683 2.051a1 1 0 01-.633.633l-2.051.683a1 1 0 000 1.898l2.051.684a1 1 0 01.633.632l.683 2.051a1 1 0 001.898 0l.683-2.051a1 1 0 01.633-.633l2.051-.683a1 1 0 000-1.898l-2.051-.683a1 1 0 01-.633-.633L6.95 5.684zM13.949 13.684a1 1 0 00-1.898 0l-.184.551a1 1 0 01-.632.633l-.551.183a1 1 0 000 1.898l.551.183a1 1 0 01.633.633l.183.551a1 1 0 001.898 0l.184-.551a1 1 0 01.632-.633l.551-.183a1 1 0 000-1.898l-.551-.184a1 1 0 01-.633-.632l-.183-.551z"></path>
+</svg>
+                                    <div class="text-white">Generate</div>
+                                </div>
+                                Design a new room from scratch
+                            </h2>
+                            <p class="text-gray-300 text-xl sm:text-center"><span class="text-white/90">Specify your design preferences and easily generate dozens of photo-realistic renders.</span>
+                            </p>
+                        </div>
+                        <div class="block relative overflow-auto scrollbar-hide min-h-64 pt-2 h-full" style="mask-image: linear-gradient(to bottom, transparent, white 0.5rem, white 90%, transparent)">
+                            <div class="grid grid-cols-2 gap-[1px]">
+                                <img loazing="lazy" alt class="block aspect-[3/2] w-full h-full object-cover object-center" srcset="https://resize.imagekit.co/O50LmCUpi0NbE3vrhucWhJWdqHO-V6JAmq2KjRun6vs/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/blank-slates/15-895060d31252ac040d15e6f67f0b824d7e15d2392dbfc913fd4f6906dabb1e58.jpg 1x, https://resize.imagekit.co/OdU5k2exQPO8cCX5GfBGmxpNUMgWII8ahGNfFX7j4zM/rs:fill:400:300/dpr:2/plain/https://roomai.com/assets/home/blank-slates/15-895060d31252ac040d15e6f67f0b824d7e15d2392dbfc913fd4f6906dabb1e58.jpg 2x, https://resize.imagekit.co/EGmxbdvYVD1WA2rswUq_o7UyidqxBXienWMUzX7wB6I/rs:fill:400:300/dpr:3/plain/https://roomai.com/assets/home/blank-slates/15-895060d31252ac040d15e6f67f0b824d7e15d2392dbfc913fd4f6906dabb1e58.jpg 3x"
+                                    src="https://resize.imagekit.co/O50LmCUpi0NbE3vrhucWhJWdqHO-V6JAmq2KjRun6vs/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/blank-slates/15-895060d31252ac040d15e6f67f0b824d7e15d2392dbfc913fd4f6906dabb1e58.jpg"
+                                />
+                                <img loazing="lazy" alt class="block aspect-[3/2] w-full h-full object-cover object-center" srcset="https://resize.imagekit.co/GBjdmDoFkbVWhvfZibtyORGPOD20wUesKb-TYSpI8-s/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/blank-slates/6-bb490e32960019421bb77ccb4ff063f417ee647ecf2f61ac9cbd172e1773ae8c.jpg 1x, https://resize.imagekit.co/A9tlDdTqvNh4AywNO0jb2f0Edoq4CJPnNUIuUza6TYA/rs:fill:400:300/dpr:2/plain/https://roomai.com/assets/home/blank-slates/6-bb490e32960019421bb77ccb4ff063f417ee647ecf2f61ac9cbd172e1773ae8c.jpg 2x, https://resize.imagekit.co/MG-CrEstVT43EpvTVazp2_RZa4T71VJRfqq9omsE8JA/rs:fill:400:300/dpr:3/plain/https://roomai.com/assets/home/blank-slates/6-bb490e32960019421bb77ccb4ff063f417ee647ecf2f61ac9cbd172e1773ae8c.jpg 3x"
+                                    src="https://resize.imagekit.co/GBjdmDoFkbVWhvfZibtyORGPOD20wUesKb-TYSpI8-s/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/blank-slates/6-bb490e32960019421bb77ccb4ff063f417ee647ecf2f61ac9cbd172e1773ae8c.jpg"
+                                />
+                                <img loazing="lazy" alt class="block aspect-[3/2] w-full h-full object-cover object-center" srcset="https://resize.imagekit.co/b9sxAy0DdvGlwB3q-qTWPmp1m57AvN-vdKFLit10lCc/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/blank-slates/18-fc00334af400181f9cbdf0ad9f439f3b1602a1f8eaf1e85de43adaa6ffb0fa52.jpg 1x, https://resize.imagekit.co/0ZRD30EAzNYaQeamlkuPl49zddr8fRahdeGFKoFqU7Q/rs:fill:400:300/dpr:2/plain/https://roomai.com/assets/home/blank-slates/18-fc00334af400181f9cbdf0ad9f439f3b1602a1f8eaf1e85de43adaa6ffb0fa52.jpg 2x, https://resize.imagekit.co/SemYbOIUgk91p9kF0rj41rtM3407-2l7kFOtocpFKPo/rs:fill:400:300/dpr:3/plain/https://roomai.com/assets/home/blank-slates/18-fc00334af400181f9cbdf0ad9f439f3b1602a1f8eaf1e85de43adaa6ffb0fa52.jpg 3x"
+                                    src="https://resize.imagekit.co/b9sxAy0DdvGlwB3q-qTWPmp1m57AvN-vdKFLit10lCc/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/blank-slates/18-fc00334af400181f9cbdf0ad9f439f3b1602a1f8eaf1e85de43adaa6ffb0fa52.jpg"
+                                />
+                                <img loazing="lazy" alt class="block aspect-[3/2] w-full h-full object-cover object-center" srcset="https://resize.imagekit.co/7SmnUxIohrjbMmSJ0TNjqu-GUUqliUYwsMFlSt0lmkM/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/blank-slates/14-7d033af9bbec1af7cad967d94b9952c53de29fb6b019b9a9f8ad7d673f9d4e47.jpg 1x, https://resize.imagekit.co/ZPk42CWcUVOTmfzPbFBvChi97wWAx00nSOuIuoSuBsg/rs:fill:400:300/dpr:2/plain/https://roomai.com/assets/home/blank-slates/14-7d033af9bbec1af7cad967d94b9952c53de29fb6b019b9a9f8ad7d673f9d4e47.jpg 2x, https://resize.imagekit.co/2V_TxPojrjf5tm0PINHFuykAQ14xQfq-K7MfI6DmBNg/rs:fill:400:300/dpr:3/plain/https://roomai.com/assets/home/blank-slates/14-7d033af9bbec1af7cad967d94b9952c53de29fb6b019b9a9f8ad7d673f9d4e47.jpg 3x"
+                                    src="https://resize.imagekit.co/7SmnUxIohrjbMmSJ0TNjqu-GUUqliUYwsMFlSt0lmkM/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/blank-slates/14-7d033af9bbec1af7cad967d94b9952c53de29fb6b019b9a9f8ad7d673f9d4e47.jpg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 hidden lg:block md:col-span-4">
+                    <div class=" bg-gray-900 border-gray-700 flex relative flex-col rounded-lg text-gray-200 gap-4 h-full overflow-hidden shadow-lg shadow-black border">
+                        <div class="block p-10 pb-0 shrink-0">
+                            <h2 class="text-2xl font-bold text-white mb-4 flex flex-col sm:flex-row items-center gap-3 justify-center sm:text-center">
+                                <div class="rounded p-1 bg-orange-500 text-orange-900">
+                                    <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-6 h-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m1.458 12.171 9.435-9.443a1.5 1.5 0 0 1 2.122.007l9.443 9.436"></path><path d="m19.458 9.173v11.998h-15v-12.003"></path><path d="m14.958 21.171v-4.5a3 3 0 0 0 -6 0v4.5"></path></g></svg>
+                                </div>
+                                Rooms
+                            </h2>
+                            <p class="text-gray-300 text-xl sm:text-center">No matter what type of room you're designing, we've got you covered.
+                            </p>
+                        </div>
+                        <div class="block relative overflow-auto scrollbar-hide min-h-64 pt-2 h-full" style="mask-image: linear-gradient(to bottom, transparent, white 0.5rem, white 90%, transparent)">
+                            <div class="absolute inset-0 min-h-64">
+                                <div class="p-4 responsive-grid gap-3" style="--min-width: 120px">
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m21.75 9.375a1.5 1.5 0 0 0 -1.5 1.5v1.5a.75.75 0 0 1 -.75.75h-15a.75.75 0 0 1 -.75-.75v-1.5a1.5 1.5 0 0 0 -3 0v3a3 3 0 0 0 3 3h16.5a3 3 0 0 0 3-3v-3a1.5 1.5 0 0 0 -1.5-1.5z"></path><path d="m3.75 16.875v2.25"></path><path d="m20.25 16.875v2.25"></path><path d="m2.25 9.375a4.5 4.5 0 0 1 4.5-4.5h10.5a4.5 4.5 0 0 1 4.5 4.5"></path><path d="m12 13.125v-8.25"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Living Room</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="22.5" rx="1.5" width="21" x="1.5" y=".75"></rect><rect height="4.5" rx="1.5" width="6" x="4.5" y="3.75"></rect><rect height="4.5" rx="1.5" width="6" x="13.5" y="3.75"></rect><path d="m1.5 8.25h21"></path><path d="m1.5 12.75h21"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Bedroom</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2.25 5.25v1.5a1.5 1.5 0 0 0 1.5 1.5h8.5a1.5 1.5 0 0 1 1.5 1.5v13.5h8a1.5 1.5 0 0 0 1.5-1.5v-19.5a1.5 1.5 0 0 0 -1.5-1.5h-15a4.49 4.49 0 0 0 -4.5 4.5z"></path><path d="m7.25 8.25v11"></path><rect height="7.5" rx="1.81" width="7" x="3.75" y="11.75"></rect><path d="m.75 23.25h13"></path><circle cx="18.5" cy="16.5" r="1.75"></circle><path d="m15.75 3.75v1.5"></path><path d="m19.75 3.75v1.5"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Kitchen</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m13.75 14.25h9.5l-.66 4a6 6 0 0 1 -5.92 5h-9.34a6 6 0 0 1 -5.92-5l-.66-4h5.5"></path><path d="m13 19.75h-6a.76.76 0 0 1 -.75-.75v-4.75a1.5 1.5 0 0 1 1.5-1.5h4.5a1.5 1.5 0 0 1 1.5 1.5v4.75a.76.76 0 0 1 -.75.75z"></path><path d="m15.75 3.75a3 3 0 0 1 6 0v10.5"></path><path d="m12.75 6.75a3 3 0 0 1 6 0z"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Bathroom</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2.25 9v13.5"></path><path d="m20.247 15h2.253a.75.75 0 0 0 .75-.748c.008-3.831.028-8.458-1.559-12.289a.75.75 0 0 0 -1.443.287v20.25"></path><path d="m.75 1.5v6a1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5v-6"></path><path d="m16.5 8.283a7.173 7.173 0 0 0 -9.744-.7"></path><path d="m6 18.717a7.178 7.178 0 0 0 10.5 0"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Dining Room</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m21 14.25v-9.75a1.5 1.5 0 0 0 -1.5-1.5h-15a1.5 1.5 0 0 0 -1.5 1.5v9.75z"></path><path d="m23.121 18.891a1.5 1.5 0 0 1 -1.371 2.109h-19.5a1.5 1.5 0 0 1 -1.371-2.109l2.121-4.641h18z"></path><path d="m10.5 18h3"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Home Office</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m20.61 9.88c-.36-4.55-4.55-7.55-8.61-7.55s-8.25 3-8.61 7.55a2.62 2.62 0 1 0 0 5.24 9 9 0 0 0 17.22 0 2.62 2.62 0 1 0 0-5.24z"></path><path d="m12 2.33a2.25 2.25 0 1 1 -2.12 3"></path><path d="m14 17a3 3 0 0 1 -4 0"></path><path d="m17.25 11a1.5 1.5 0 0 1 -3 0"></path><path d="m9.75 11a1.5 1.5 0 0 1 -3 0"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Kids&#39; Room</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g stroke="currentColor"><path d="m20.25 6h-16.5c-1.65685 0-3 1.34315-3 3v10.5c0 1.6569 1.34315 3 3 3h16.5c1.6569 0 3-1.3431 3-3v-10.5c0-1.65685-1.3431-3-3-3z" stroke-linecap="round" stroke-linejoin="round"></path><path d="m3.75 17.578v-6.656c-.00025-.347.1198-.6833.3397-.95172.2199-.26841.52605-.45227.8663-.52028 1.5791-.3088 3.18502-.45954 4.794-.45 1.609-.00954 3.2149.1412 4.794.45.3403.06801.6464.25187.8663.52028.2199.26842.34.60472.3397.95172v6.656c.0003.347-.1198.6833-.3397.9517s-.526.4523-.8663.5203c-1.5791.3088-3.185.4595-4.794.45-1.60898.0095-3.2149-.1412-4.794-.45-.34025-.068-.6464-.2519-.8663-.5203s-.33995-.6047-.3397-.9517z" stroke-linecap="round" stroke-linejoin="round"></path><path d="m19.5 12c-.2071 0-.375-.1679-.375-.375s.1679-.375.375-.375"></path><path d="m19.5 12c.2071 0 .375-.1679.375-.375s-.1679-.375-.375-.375"></path><path d="m19.5 16.125c-.2071 0-.375-.1679-.375-.375s.1679-.375.375-.375"></path><path d="m19.5 16.125c.2071 0 .375-.1679.375-.375s-.1679-.375-.375-.375"></path><path d="m7.5 1.5 5.25 4.5 4.5-4.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Media Room</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m21.052 20.25a1.433 1.433 0 0 0 1.176-.624 1.549 1.549 0 0 0 .2-1.353 10.763 10.763 0 0 0 -10.428-7.023 10.763 10.763 0 0 0 -10.425 7.023 1.543 1.543 0 0 0 .2 1.353 1.431 1.431 0 0 0 1.175.624z"></path><path d="m14.25 6a2.25 2.25 0 1 0 -2.25 2.25v3"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Mudroom</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m1.5 15.75 1.5 4.5h3a1.5 1.5 0 0 1 1.5 1.5v1.5"></path><path d="m3 20.25v3"></path><path d="m22.5 15.75-1.5 4.5h-3a1.5 1.5 0 0 0 -1.5 1.5v1.5"></path><path d="m21 20.25v3"></path><path d="m12 11.716v11.534"></path><path d="m22.06 9.216a1.5 1.5 0 0 1 .344 1.589 3.129 3.129 0 0 1 -2.9 1.945 2.987 2.987 0 0 1 -2.625-1.575 2.971 2.971 0 0 1 -4.879.541 2.971 2.971 0 0 1 -4.875-.541 2.987 2.987 0 0 1 -2.625 1.575 3.13 3.13 0 0 1 -2.9-1.945 1.5 1.5 0 0 1 .34-1.589l9-8.026a1.5 1.5 0 0 1 2.122 0z"></path><path d="m7.125 11.175 4.875-10.425"></path><path d="m16.875 11.175-4.875-10.425"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Patio</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g stroke="currentColor"><path d="m9.58691 3.65003h7.36649c.964-.00086 1.8975.33812 2.6363.95737.7389.61926 1.236 1.47917 1.4039 2.42863l2.2465 12.73797c.0126.0706.0095.1431-.0089.2123-.0185.0693-.0519.1336-.098.1886-.046.0549-.1036.099-.1685.1293-.065.0303-.1358.0459-.2075.0458h-21.909483c0-1.29.154063-2.5675.647673-3.7593.49361-1.1919 1.21711-2.2748 2.12918-3.1869.91207-.9122 1.99485-1.6357 3.1865-2.1293s2.46884-.7476 3.75863-.7475h11.0347" stroke-linecap="round" stroke-linejoin="round"></path><path d="m12.3727 16.6c-.2071 0-.375-.1679-.375-.375s.1679-.375.375-.375"></path><path d="m12.3727 16.6c.2071 0 .375-.1679.375-.375s-.1679-.375-.375-.375"></path><path d="m17.6227 16.6c-.2071 0-.375-.1679-.375-.375s.1679-.375.375-.375"></path><path d="m17.6227 16.6c.2071 0 .375-.1679.375-.375s-.1679-.375-.375-.375"></path><path d="m7.12274 16.6c-.20711 0-.375-.1679-.375-.375s.16789-.375.375-.375"></path><path d="m7.12274 16.6c.20711 0 .375-.1679.375-.375s-.16789-.375-.375-.375"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Laundry Room</div>
+                                    </div>
+                                    <div class="bg-gray-800 border border border-gray-700 p-3 text-gray-300 flex flex-col gap-2 justify-center items-center rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m16.318 1.189a1.5 1.5 0 0 0 0 2.121l4.371 4.371a1.5 1.5 0 0 0 2.122-2.121l-4.372-4.371a1.5 1.5 0 0 0 -2.121 0z"></path><path d="m12.075 1.188a1.5 1.5 0 0 0 0 2.122l8.615 8.615a1.5 1.5 0 1 0 2.121-2.125l-8.611-8.612a1.5 1.5 0 0 0 -2.125 0z"></path><path d="m1.189 16.318a1.5 1.5 0 0 1 2.122 0l4.371 4.371a1.5 1.5 0 0 1 -2.121 2.121l-4.372-4.371a1.5 1.5 0 0 1 0-2.121z"></path><path d="m1.189 12.074a1.5 1.5 0 0 1 2.121 0l8.615 8.615a1.5 1.5 0 0 1 -2.125 2.122l-8.611-8.611a1.5 1.5 0 0 1 0-2.126z"></path><path d="m5.802 10.499h12.395v3h-12.395z" transform="matrix(.70710678 -.70710678 .70710678 .70710678 -4.97 12)"></path></g></svg>
+                                        <div class="text-gray-400 text-base">Home Gym</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-4" id="colors">
+                    <div class=" bg-gray-900 border-gray-700 flex relative flex-col rounded-lg text-gray-200 gap-4 h-full overflow-hidden shadow-lg shadow-black border">
+                        <div class="block p-10 pb-0 shrink-0">
+                            <h2 class="text-2xl font-bold text-white mb-4 flex flex-col sm:flex-row items-center gap-3 justify-center sm:text-center">
+                                <div class="rounded p-1 bg-cyan-500 text-cyan-950">
+                                    <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" class="w-6 h-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m21.75 23.25h-19.5a14.15 14.15 0 0 0 1.5-6.35v-1.15h16.5v1.15a14.15 14.15 0 0 0 1.5 6.35z"></path><path d="m14.56 8.21a23 23 0 0 0 .44-4.46 3 3 0 0 0 -3-3 3 3 0 0 0 -3 3 23 23 0 0 0 .44 4.46 1.29 1.29 0 0 1 -1.26 1.54h-2.93a3 3 0 0 0 -3 3v2.25a.76.76 0 0 0 .75.75h18a.76.76 0 0 0 .75-.75v-2.25a3 3 0 0 0 -3-3h-2.93a1.29 1.29 0 0 1 -1.26-1.54z"></path><path d="m16.25 23.25v-4"></path><path d="m12.25 23.25v-2.75"></path></g></svg>
+                                </div>
+                                Colors
+                            </h2>
+                            <p class="text-gray-300 text-xl sm:text-center">Choose your own colors, or have AI generate a color palette that matches your style and room.
+                            </p>
+                        </div>
+                        <div class="block relative overflow-auto scrollbar-hide min-h-64 pt-2 h-full" style="mask-image: linear-gradient(to bottom, transparent, white 0.5rem, white 90%, transparent)">
+                            <div class="grid grid-cols-2 gap-0">
+                                <div class="flex flex-col items-center justify-center gap-2 px-8 py-6 pb-5 even:border-l border-gray-800 border-t">
+                                    <div class="flex">
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #FDFDFD"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #9E9E9E"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #4D4D4D"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #D3D3D3"></div>
+                                    </div>
+                                    <div class="select-none whitespace-nowrap text-gray-300 text-base">Soft Neutrals</div>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2 px-8 py-6 pb-5 even:border-l border-gray-800 border-t">
+                                    <div class="flex">
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #CCE5DF"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #85746E"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #F1E7C9"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #A6C1D6"></div>
+                                    </div>
+                                    <div class="select-none whitespace-nowrap text-gray-300 text-base">Coastal Calm</div>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2 px-8 py-6 pb-5 even:border-l border-gray-800 border-t">
+                                    <div class="flex">
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #FFFFFF"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #B0C4DE"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #A67C52"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #808080"></div>
+                                    </div>
+                                    <div class="select-none whitespace-nowrap text-gray-300 text-base">Nordic Lights</div>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2 px-8 py-6 pb-5 even:border-l border-gray-800 border-t">
+                                    <div class="flex">
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #708238"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #F9FAFB"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #778899"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #964B00"></div>
+                                    </div>
+                                    <div class="select-none whitespace-nowrap text-gray-300 text-base">Forest Retreat</div>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2 px-8 py-6 pb-5 even:border-l border-gray-800 border-t">
+                                    <div class="flex">
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #2C3E50"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #B7D1E0"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #D3D3D3"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #FFFFFF"></div>
+                                    </div>
+                                    <div class="select-none whitespace-nowrap text-gray-300 text-base">Crisp Winter</div>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2 px-8 py-6 pb-5 even:border-l border-gray-800 border-t">
+                                    <div class="flex">
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #B0E0E6"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #87CEEB"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #F4A460"></div>
+                                        <div class="rounded-full h-6 w-6 ring-4 ring-gray-900" style="background-color: #8B8680"></div>
+                                    </div>
+                                    <div class="select-none whitespace-nowrap text-gray-300 text-base">Sea Breeze</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 group animation-play-state-paused hover:animation-play-state-running" id="materials">
+                    <div class=" bg-gray-900 border-gray-700 flex relative flex-col rounded-lg text-gray-200 gap-4 h-full overflow-hidden shadow-lg shadow-black border">
+                        <div class="block p-10 pb-0 shrink-0">
+                            <h2 class="text-2xl font-bold text-white mb-4 flex flex-col sm:flex-row items-center gap-3 justify-center sm:text-center">
+                                <div class="rounded p-1 bg-yellow-500 text-yellow-900">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" viewBox="0 0 24 24" class="w-6 h-6"><g stroke="currentColor"><g stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 18.5c3.7279 0 6.75-3.0221 6.75-6.75 0-3.72792-3.0221-6.75-6.75-6.75-3.72792 0-6.75 3.02208-6.75 6.75 0 3.7279 3.02208 6.75 6.75 6.75z"></path><path d="m7.5 18.5h9c1.7902 0 3.5071-.7112 4.773-1.977 1.2658-1.2659 1.977-2.9828 1.977-4.773 0-1.79021-.7112-3.5071-1.977-4.77297-1.2659-1.26587-2.9828-1.97703-4.773-1.97703h-9"></path><path d="m4.39001 9.653c.34335-.50918.80652-.92621 1.34881-1.21444.54228-.28823 1.14707-.43883 1.76119-.43856"></path><path d="m11.25 11.75c0 .7871-.2476 1.5542-.7078 2.1927s-1.10968 1.116-1.85635 1.3649-1.55272.2565-2.30398.0218c-.75126-.2346-1.40963-.6998-1.88187-1.3294"></path></g><path d="m7.5 12.125c-.20711 0-.375-.1679-.375-.375s.16789-.375.375-.375"></path><path d="m7.5 12.125c.20711 0 .375-.1679.375-.375s-.16789-.375-.375-.375"></path><path d="m17.25 9.5h5.616" stroke-linecap="round" stroke-linejoin="round"></path><path d="m21 12.5h2.209" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+                                </div>
+                                Materials
+                            </h2>
+                            <p class="text-gray-300 text-xl sm:text-center">Try out dozens of materials to see how they would look in your interior.
+                            </p>
+                        </div>
+                        <div class="block relative overflow-auto scrollbar-hide min-h-64 pt-2 h-full" style="mask-image: linear-gradient(to bottom, transparent, white 0.5rem, white 90%, transparent)">
+                            <div class="flex flex-col gap-4 justify-start">
+                                <div class="block">
+                                    <div class="marqueeWrapper">
+                                        <div class="marquee flex gap-4 flex-nowrap animation marquee--faded">
+                                            <div class="marquee__group">
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Mirrored</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Onyx</div>
+                                                    <div class="text-gray-500 text-sm">Stone</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Colored</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Frosted</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Chrome</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                            </div>
+                                            <div aria_hidden="true" class="marquee__group">
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Mirrored</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Onyx</div>
+                                                    <div class="text-gray-500 text-sm">Stone</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Colored</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Frosted</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Chrome</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="marqueeWrapper">
+                                        <div class="marquee flex gap-4 flex-nowrap animation marquee--reverse marquee--faded">
+                                            <div class="marquee__group">
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Tempered</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Pine</div>
+                                                    <div class="text-gray-500 text-sm">Wood</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Steel</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Teak</div>
+                                                    <div class="text-gray-500 text-sm">Wood</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Seeded</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                            </div>
+                                            <div aria_hidden="true" class="marquee__group">
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Tempered</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Pine</div>
+                                                    <div class="text-gray-500 text-sm">Wood</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Steel</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Teak</div>
+                                                    <div class="text-gray-500 text-sm">Wood</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Seeded</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="marqueeWrapper">
+                                        <div class="marquee flex gap-4 flex-nowrap animation marquee--faded">
+                                            <div class="marquee__group">
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Terrazzo</div>
+                                                    <div class="text-gray-500 text-sm">Stone</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Leather</div>
+                                                    <div class="text-gray-500 text-sm">Fabrics</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Copper</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Brass</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Suede</div>
+                                                    <div class="text-gray-500 text-sm">Fabrics</div>
+                                                </div>
+                                            </div>
+                                            <div aria_hidden="true" class="marquee__group">
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Terrazzo</div>
+                                                    <div class="text-gray-500 text-sm">Stone</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Leather</div>
+                                                    <div class="text-gray-500 text-sm">Fabrics</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Copper</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Brass</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Suede</div>
+                                                    <div class="text-gray-500 text-sm">Fabrics</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="marqueeWrapper">
+                                        <div class="marquee flex gap-4 flex-nowrap animation marquee--reverse marquee--faded">
+                                            <div class="marquee__group">
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Patterned</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Basalt</div>
+                                                    <div class="text-gray-500 text-sm">Stone</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Travertine</div>
+                                                    <div class="text-gray-500 text-sm">Stone</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Silk</div>
+                                                    <div class="text-gray-500 text-sm">Fabrics</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Aluminum</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                            </div>
+                                            <div aria_hidden="true" class="marquee__group">
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Patterned</div>
+                                                    <div class="text-gray-500 text-sm">Glass</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Basalt</div>
+                                                    <div class="text-gray-500 text-sm">Stone</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Travertine</div>
+                                                    <div class="text-gray-500 text-sm">Stone</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Silk</div>
+                                                    <div class="text-gray-500 text-sm">Fabrics</div>
+                                                </div>
+                                                <div class="flex flex-col p-2 px-3 border border-gray-700 rounded bg-gray-800">
+                                                    <div class="text-gray-100 font-medium">Aluminum</div>
+                                                    <div class="text-gray-500 text-sm">Metal</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 sm:col-span-6 xl:col-span-3">
+                    <div class="flex relative flex-col rounded-lg bg-gray-900 text-gray-200 border border-gray-700 h-full overflow-hidden shadow-lg shadow-black">
+                        <div class="relative">
+                            <img loading="lazy" class="block w-full aspect-[5/2] sm:aspect-[3/2] object-cover object-center" srcset="https://resize.imagekit.co/r3PZFu6TGYk_HLxCX24GInOBY0_0648qJ0fQQfvwbc4/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/personas/home-owner-ca165f11433e3b0f5344a3614929f1a5f9232309b7dde9750dc7b060b6e537d4.jpg 1x, https://resize.imagekit.co/Q1GXDvgxyciNi3JlkUkAkdj9AkILUz9Ws9pgnOXin98/rs:fill:400:300/dpr:2/plain/https://roomai.com/assets/home/personas/home-owner-ca165f11433e3b0f5344a3614929f1a5f9232309b7dde9750dc7b060b6e537d4.jpg 2x, https://resize.imagekit.co/eusqH1C0lOhgWszZYhygL_8XtjwmP5ByppVUh9pc9BY/rs:fill:400:300/dpr:3/plain/https://roomai.com/assets/home/personas/home-owner-ca165f11433e3b0f5344a3614929f1a5f9232309b7dde9750dc7b060b6e537d4.jpg 3x"
+                                src="https://resize.imagekit.co/r3PZFu6TGYk_HLxCX24GInOBY0_0648qJ0fQQfvwbc4/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/personas/home-owner-ca165f11433e3b0f5344a3614929f1a5f9232309b7dde9750dc7b060b6e537d4.jpg"
+                            />
+                            <div class="absolute inset-0 border-b border-white/20"></div>
+                        </div>
+                        <div class="p-8">
+                            <h2 class="text-xl font-bold text-white mb-4 flex items-center text-center">Home Owners</h2>
+                            <div class="text-lg">
+                                <p>Discover your dream home without breaking the bank.</p>
+                                <p class="mt-2 hidden lg:block">Our user-friendly, professional-grade tool empowers you to envision your perfect space with ease.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 sm:col-span-6 xl:col-span-3">
+                    <div class="flex relative flex-col rounded-lg bg-gray-900 text-gray-200 border border-gray-700 h-full overflow-hidden shadow-lg shadow-black">
+                        <div class="relative">
+                            <img loading="lazy" class="block w-full aspect-[5/2] sm:aspect-[3/2] object-cover object-center" srcset="https://resize.imagekit.co/mR4J1No3LpYsDsYJQKTaPP_zPHbAm5JBknh7ZVeZoHg/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/personas/interior-design-c16198ac221afc80301c325bf8d2b3ecdb9ee9f1dde026472290591353ed4ee9.jpg 1x, https://resize.imagekit.co/DC3MjZeVgYG4u9CG0BkF-o1Nr7AQnU6mmlY6c4WqP8k/rs:fill:400:300/dpr:2/plain/https://roomai.com/assets/home/personas/interior-design-c16198ac221afc80301c325bf8d2b3ecdb9ee9f1dde026472290591353ed4ee9.jpg 2x, https://resize.imagekit.co/_M5bL5qZSanca_HllKAOTcT0Ut8nF7NfSCRTFAzUk5A/rs:fill:400:300/dpr:3/plain/https://roomai.com/assets/home/personas/interior-design-c16198ac221afc80301c325bf8d2b3ecdb9ee9f1dde026472290591353ed4ee9.jpg 3x"
+                                src="https://resize.imagekit.co/mR4J1No3LpYsDsYJQKTaPP_zPHbAm5JBknh7ZVeZoHg/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/personas/interior-design-c16198ac221afc80301c325bf8d2b3ecdb9ee9f1dde026472290591353ed4ee9.jpg"
+                            />
+                            <div class="absolute inset-0 border-b border-white/20"></div>
+                        </div>
+                        <div class="p-8">
+                            <h2 class="text-xl font-bold text-white mb-4 flex items-center text-center">Interior Designers</h2>
+                            <div class="text-lg">
+                                <p>Secure more clients and seal deals faster by generating a plethora of design ideas in a fraction of the time.</p>
+                                <p class="mt-2 hidden lg:block">Stay ahead of the curve by incorporating cutting-edge AI technology in your work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 sm:col-span-6 xl:col-span-3">
+                    <div class="flex relative flex-col rounded-lg bg-gray-900 text-gray-200 border border-gray-700 h-full overflow-hidden shadow-lg shadow-black">
+                        <div class="relative">
+                            <img loading="lazy" class="block w-full aspect-[5/2] sm:aspect-[3/2] object-cover object-center" srcset="https://resize.imagekit.co/Mg0EEbVRX5lGgR4dAlY-cI9EoIZTm0f3DUXm6Sa_fQc/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/personas/real-estate-7fb20bc95a29b4dc8797606c4c113270ecf801e87696fda8bf37df0b59669468.jpg 1x, https://resize.imagekit.co/E3r7g7kXUQJ5aE_AovMaIN8Lg6e0GfAjhZsxx7LVMLI/rs:fill:400:300/dpr:2/plain/https://roomai.com/assets/home/personas/real-estate-7fb20bc95a29b4dc8797606c4c113270ecf801e87696fda8bf37df0b59669468.jpg 2x, https://resize.imagekit.co/pnMNs_pX70yhboRs9tdaGmtHI4Ve7DJpSWYdF4NjNHo/rs:fill:400:300/dpr:3/plain/https://roomai.com/assets/home/personas/real-estate-7fb20bc95a29b4dc8797606c4c113270ecf801e87696fda8bf37df0b59669468.jpg 3x"
+                                src="https://resize.imagekit.co/Mg0EEbVRX5lGgR4dAlY-cI9EoIZTm0f3DUXm6Sa_fQc/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/personas/real-estate-7fb20bc95a29b4dc8797606c4c113270ecf801e87696fda8bf37df0b59669468.jpg"
+                            />
+                            <div class="absolute inset-0 border-b border-white/20"></div>
+                        </div>
+                        <div class="p-8">
+                            <h2 class="text-xl font-bold text-white mb-4 flex items-center text-center">Real Estate Agents</h2>
+                            <div class="text-lg">
+                                <p>Sell properties faster by showcasing multiple interior design possibilities to prospective clients.</p>
+                                <p class="mt-2 hidden lg:block">Boost conversion rates on your website with diverse and stunning visualizations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 sm:col-span-6 xl:col-span-3">
+                    <div class="flex relative flex-col rounded-lg bg-gray-900 text-gray-200 border border-gray-700 h-full overflow-hidden shadow-lg shadow-black">
+                        <div class="relative">
+                            <img loading="lazy" class="block w-full aspect-[5/2] sm:aspect-[3/2] object-cover object-center" srcset="https://resize.imagekit.co/yY7pK-WAOBnDxhcY0xU2FsSXS3G1F7M4xWJSjXVCTQ8/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/personas/architect-f90e95b4a9facfef76a42f39bcc77a2fb7d2be80916a974de557019f1819ce8c.jpg 1x, https://resize.imagekit.co/HUVtm_H6YhU_XCR7H536Zi1GyxRBI3RpdnzObiGcjjA/rs:fill:400:300/dpr:2/plain/https://roomai.com/assets/home/personas/architect-f90e95b4a9facfef76a42f39bcc77a2fb7d2be80916a974de557019f1819ce8c.jpg 2x, https://resize.imagekit.co/PxND_EPWwHTQmKwNZQCJ8aMsxKtHTsN9QQvpJ7po_78/rs:fill:400:300/dpr:3/plain/https://roomai.com/assets/home/personas/architect-f90e95b4a9facfef76a42f39bcc77a2fb7d2be80916a974de557019f1819ce8c.jpg 3x"
+                                src="https://resize.imagekit.co/yY7pK-WAOBnDxhcY0xU2FsSXS3G1F7M4xWJSjXVCTQ8/rs:fill:400:300/dpr:1/plain/https://roomai.com/assets/home/personas/architect-f90e95b4a9facfef76a42f39bcc77a2fb7d2be80916a974de557019f1819ce8c.jpg"
+                            />
+                            <div class="absolute inset-0 border-b border-white/20"></div>
+                        </div>
+                        <div class="p-8">
+                            <h2 class="text-xl font-bold text-white mb-4 flex items-center text-center">Architects</h2>
+                            <div class="text-lg">
+                                <p>Simplify your design process and impress clients with a sneak peek into their future interior.</p>
+                                <p class="mt-2 hidden lg:block">Leverage our easy-to-use tool to generate design ideas without needing to master interior design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container mx-auto p-2 my-10" id="cta">
+                <div class="grid sm:grid-cols-2 sm:gap-20 bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
+                    <div class="block sm:pt-8 sm:order-last border-b border-gray-800 sm:border-b-none">
+                        <img class="block w-full sm:rounded-tl shadow-xl" alt="Screenshot of Room AI interface" srcset="https://resize.imagekit.co/NWHsn8x-Ywj8Kf7TZFMv2CYdy2Deq-flidyWyD5axdk/dpr:1/plain/https://roomai.com/assets/home/screenshot-cropped-2aabe491c73ffbe834316944f365b01302dfa102145eb4b5867235ecaba7207d.jpg 1x, https://resize.imagekit.co/JiI8-Go8xWYeLJV1Xu61Kvi12Og_CErouHQf4ezFYxY/dpr:2/plain/https://roomai.com/assets/home/screenshot-cropped-2aabe491c73ffbe834316944f365b01302dfa102145eb4b5867235ecaba7207d.jpg 2x, https://resize.imagekit.co/dgGZLYhbXDtFVMu0-kx0C7f7__l0l-KTWQ3kKYfrVro/dpr:3/plain/https://roomai.com/assets/home/screenshot-cropped-2aabe491c73ffbe834316944f365b01302dfa102145eb4b5867235ecaba7207d.jpg 3x"
+                            src="https://resize.imagekit.co/NWHsn8x-Ywj8Kf7TZFMv2CYdy2Deq-flidyWyD5axdk/dpr:1/plain/https://roomai.com/assets/home/screenshot-cropped-2aabe491c73ffbe834316944f365b01302dfa102145eb4b5867235ecaba7207d.jpg" />
+                    </div>
+                    <div class="p-8 sm:p-16 flex flex-col gap-8">
+                        <h2 class="font-polysans text-4xl sm:text-7xl font-semibold sm:font-bold">
+                            Get started today.
+                            <span class="whitespace-nowrap text-gray-700">For free.</span>
+                        </h2>
+                        <div class="mt-auto">
+                            <a class="transition-colors duration-200 inline-block text-xl bg-teal-600 hover:bg-teal-500 border border-teal-500 hover:border-teal-400 text-white font-medium py-2 px-4 rounded" href="start.html">Get started for free</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="border-t border-gray-900 p-10 bg-gray-950/50" id="faq">
+                <div class="grid sm:grid-cols-2 sm:gap-20 container mx-auto">
+                    <h2 class="font-polysans text-5xl font-bold mb-5">
+                        Your questions,
+                        <br> answered
+                    </h2>
+                    <div class="flex flex-col gap-0 [&amp;:has([open])_details:not([open])_summary]:text-gray-400">
+                        <details class="group py-4 border-b border-gray-800 [&amp;:last-child]:border-b-0" data-xcontroller="accordion">
+                            <summary class="flex items-center list-none cursor-pointer transition-color duration-200 [&amp;::-webkit-details-marker]:hidden">
+                                <h3 class="text-xl font-medium select-none">Can I use these designs commercially?</h3>
+                                <div class="ml-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 hidden group-open:block">
+<path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd"></path>
+</svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 block text-gray-500 group-open:hidden">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+                                </div>
+                            </summary>
+                            <p class="text-lg mt-2">Certainly! If you're a user with a paid subscription that supports commercial usage, you have the rights to use the designs for commercial purposes. But remember, rights for personal and commercial use depend on the type of
+                                subscription you hold. Always ensure your usage aligns with your subscription terms.</p>
+                        </details>
+                        <details class="group py-4 border-b border-gray-800 [&amp;:last-child]:border-b-0" data-xcontroller="accordion">
+                            <summary class="flex items-center list-none cursor-pointer transition-color duration-200 [&amp;::-webkit-details-marker]:hidden">
+                                <h3 class="text-xl font-medium select-none">What type of input should I provide to get good results?</h3>
+                                <div class="ml-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 hidden group-open:block">
+<path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd"></path>
+</svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 block text-gray-500 group-open:hidden">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+                                </div>
+                            </summary>
+                            <p class="text-lg mt-2">Whether you want to restyle an existing space or create a design from scratch, our AI can handle it. You can upload images, select design elements or even create from scratch - the more detail you provide, the better our AI
+                                can meet your expectations.</p>
+                        </details>
+                        <details class="group py-4 border-b border-gray-800 [&amp;:last-child]:border-b-0" data-xcontroller="accordion">
+                            <summary class="flex items-center list-none cursor-pointer transition-color duration-200 [&amp;::-webkit-details-marker]:hidden">
+                                <h3 class="text-xl font-medium select-none">How does Room AI differ from other interior design tools?</h3>
+                                <div class="ml-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 hidden group-open:block">
+<path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd"></path>
+</svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 block text-gray-500 group-open:hidden">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+                                </div>
+                            </summary>
+                            <p class="text-lg mt-2">Since our launch in September 2022, several competitors have emerged, applying similar AI technology in predictable ways. Room AI goes a step further by collaborating with users and industry experts. As a result, we offer more
+                                than just powerful AI technology; we deliver it through an easy-to-use interface, packed with a variety of customization options and suggestions such as color palettes and materials, ensuring that we effectively cater to
+                                your needs.</p>
+                        </details>
+                        <details class="group py-4 border-b border-gray-800 [&amp;:last-child]:border-b-0" data-xcontroller="accordion">
+                            <summary class="flex items-center list-none cursor-pointer transition-color duration-200 [&amp;::-webkit-details-marker]:hidden">
+                                <h3 class="text-xl font-medium select-none">Do I still need an interior designer?</h3>
+                                <div class="ml-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 hidden group-open:block">
+<path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd"></path>
+</svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 block text-gray-500 group-open:hidden">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+                                </div>
+                            </summary>
+                            <p class="text-lg mt-2">Room AI is a powerful tool that could serve as a complete solution for many users. However, depending on your specific needs, the expertise of an interior designer can provide additional value. We see Room AI working in harmony
+                                with professional designers, augmenting their skills with our AI technology.</p>
+                        </details>
+                        <details class="group py-4 border-b border-gray-800 [&amp;:last-child]:border-b-0" data-xcontroller="accordion">
+                            <summary class="flex items-center list-none cursor-pointer transition-color duration-200 [&amp;::-webkit-details-marker]:hidden">
+                                <h3 class="text-xl font-medium select-none">Is payment secure?</h3>
+                                <div class="ml-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 hidden group-open:block">
+<path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd"></path>
+</svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 block text-gray-500 group-open:hidden">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+                                </div>
+                            </summary>
+                            <p class="text-lg mt-2">Absolutely. We use Stripe, a leading global payment processor, to ensure your transactions are secure. Stripe securely stores your credit card details in compliance with data protection regulations.</p>
+                        </details>
+                        <details class="group py-4 border-b border-gray-800 [&amp;:last-child]:border-b-0" data-xcontroller="accordion">
+                            <summary class="flex items-center list-none cursor-pointer transition-color duration-200 [&amp;::-webkit-details-marker]:hidden">
+                                <h3 class="text-xl font-medium select-none">How do you handle my data and respect my privacy?</h3>
+                                <div class="ml-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 hidden group-open:block">
+<path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd"></path>
+</svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 block text-gray-500 group-open:hidden">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+                                </div>
+                            </summary>
+                            <p class="text-lg mt-2">We take your privacy seriously and are committed to keeping your uploads confidential. We assure you that we will not publish any outputs of your account on our homepage or anywhere else without your explicit permission. We
+                                follow stringent data management practices to protect your data. For more detailed information on how we handle and protect your data, please check out our <a href="/privacy-policy" class="text-white hover:underline">Privacy Policy</a>.</p>
+                        </details>
+                        <details class="group py-4 border-b border-gray-800 [&amp;:last-child]:border-b-0" data-xcontroller="accordion">
+                            <summary class="flex items-center list-none cursor-pointer transition-color duration-200 [&amp;::-webkit-details-marker]:hidden">
+                                <h3 class="text-xl font-medium select-none">Who created Room AI?</h3>
+                                <div class="ml-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 hidden group-open:block">
+<path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd"></path>
+</svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 block text-gray-500 group-open:hidden">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+                                </div>
+                            </summary>
+                            <p class="text-lg mt-2">I, Marc Köhlbrugge, developed Room AI with the help of input from industry professionals. Through extensive use of AI technology while developing Room AI, I'm able to offer Room AI's services at an affordable price while ensuring
+                                a sustainable business.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="p-8 sm:p-12 border-t border-gray-800 text-gray-400 bg-gray-900">
+        <section class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-20">
+            <div class="block">
+                <img alt="Room AI" class="h-6 object-contain" src="https://roomai.com/assets/logo-tm-ee3cfe73454ddb84a39cce589111c734b2251bbbdb54108c55444c5870af8ce6.svg" />
+                <p class="text-lg text-gray-100 my-4">Generate interior designs with&nbsp;AI.</p>
+                <p class="mt-2">
+                    &copy; 2024
+                    <div class="sm:whitespace-nowrap">Killbridge Ventures Pte. Ltd.</div>
+                </p>
+            </div>
+            <div class="block">
+                <h3 class="text-lg font-semibold text-gray-100">Legal</h3>
+                <div class="flex flex-col gap-1 mt-2">
+                    <a class="text-gray-400 hover:text-white hover:underline" href="terms-of-service.html">Terms of Service</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="privacy-policy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="block">
+                <h3 class="text-lg font-semibold text-gray-100">Links</h3>
+                <div class="flex flex-col gap-1 mt-2">
+                    <a class="text-gray-400 hover:text-white hover:underline" href="pricing.html">Pricing</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="start.html">Log in</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="/billing">Billing &amp; Invoices</a>
+                </div>
+            </div>
+            <div class="block">
+                <h3 class="text-lg font-semibold text-gray-100">Contact</h3>
+                <div class="flex flex-col gap-1 mt-2">
+                    <a class="text-gray-400 hover:text-white hover:underline" href="https://twitter.com/roomai_com">Twitter</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="mailto:team@roomai.com">Support (email)</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="mailto:press@roomai.com">Press (email)</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

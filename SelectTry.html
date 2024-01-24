@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Room AI</title>
+    <meta name="description" content="Try out 40+ interior design styles for your home. No downloads or installs required. Free to try." />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:title" content="Room AI" />
+    <meta property="og:description" content="Restyle your room with AI – Try for free" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="836" />
+    <meta property="og:type" content="product" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@roomai_com" />
+    <meta name="twitter:creator" content="@marckohlbrugge" />
+    <meta name="twitter:title" content="Room AI" />
+    <meta name="twitter:description" content="Restyle your room with AI – Try for free" />
+    <meta name="url" content="https://roomai.com/" />
+    <meta property="og:image" content="https://roomai.com/assets/social/twitter-card-029ec5c3a180e9039d3c3fcfe302be9d85cb8fc2ce3073ee8ab040393c018181.png" />
+    <meta property="twitter:image" content="https://roomai.com/assets/social/twitter-card-029ec5c3a180e9039d3c3fcfe302be9d85cb8fc2ce3073ee8ab040393c018181.png" />
+    <meta property="og:video" content="https://roomai.com/assets/roomai-27316d5f36165214a9364eb63c0117890207f895be030a898962d746731afc8e.mp4" type="video/mp4" width="1280" height="1016" />
+    <link rel="canonical" href="https://roomai.com/try" />
+    <link rel="icon" type="image/x-icon" href="https://roomai.com/assets/favicon-1c045dbfe155740a64b3f6ee20f32bfbd3256845d2e21d12795e7cd73bb55ac5.ico" />
+    <link href="https://roomai.com/assets/apple-touch-icon-d3465bbf1f672485304b1b9c17be0c575c1f85e56c09d04617260e1729e4a7d5.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="https://roomai.com/assets/apple-touch-icon-120x120-21fa757db4cd7c6ad2fd8d6f8c16aa134c67ca0462a53eb7233dcc0616532801.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="https://roomai.com/assets/favicon-32x32-9b9438298fe6ecc438c4768c363530bf9a5612c119782c0dee1db3b02a798cef.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="https://roomai.com/assets/favicon-16x16-5acdaa537d0d52a77be045b20a6f20bb73e4e6b1d4d0e324ba931b2403285ee5.png" rel="icon" sizes="16x16" type="image/png">
+    <link rel="preload" href="https://roomai.com/assets/polysans/neutral-f9189954098a15413d14187780f6d96e484af26c18b09fcbffa64b3f577506b2.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://roomai.com/assets/polysans/median-2cc4db87b0b1e35537d21bd9e96dd5b05c3ed677870f946cad942bb27ab5e748.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://roomai.com/assets/polysans/bulky-3b3d00b133c63cdc3b85421f2c923c2edb578af9e27c3c5f2f9ec7981170b373.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://roomai.com/assets/kalam/regular-edbf5950cd8c859ace6e0e29b9372e53cef71cba0e900a47cd9f5c55ddea2f50.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="zkodeCsrM4jOKG3GejmOJMvV7yrbSohrPu-cYQwmqp1UdSHbFMsZG0FD4G2ksI9aNCkNh89ys2azBRB2FsI5YA" />
+    <link rel="stylesheet" href="https://roomai.com/assets/tailwind-8c7beda11f2a43a257a66c83e98cc75b2b084125f8592451d679bdfc30ab8962.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="https://roomai.com/assets/inter-font-95bae7e5d612a17f92905fe8c37ca3885b798e95da071bd3e44d8cf7e6a70291.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="https://roomai.com/assets/application-7097d29b415b95608a77148ab880feb03e410a846cd92b37bc1a614ff3b68a15.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{ "imports": { "application": "https://roomai.com/assets/application-148ad0fd22331e553c7b7dab43b8d60226ba2f2506d98fd1cbd4ae490c049715.js", "@hotwired/turbo-rails": "https://roomai.com/assets/turbo.min-ea591e8a3d614b8a69205bdbc533ce97c24c328002ed5b27c50c31ebfd664bef.js",
+        "@hotwired/stimulus": "https://roomai.com/assets/stimulus.min-e6c8abed9ee6544dc446ae5d59da0036d2746c3297672bfac90f9c29b4f00be0.js", "@hotwired/stimulus-loading": "https://roomai.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+        "minimasonry": "https://ga.jspm.io/npm:minimasonry@1.3.2/build/minimasonry.esm.js", "autosize": "https://ga.jspm.io/npm:autosize@6.0.1/dist/autosize.esm.js", "@rails/activestorage": "https://roomai.com/assets/fixed-activestorage.esm-f2e55e0f1d68c6081e7c735a76cd5fd95ffa1fdc1fbc5a3be9d251cb6294c8c4.js",
+        "stimulus-use": "https://ga.jspm.io/npm:stimulus-use@0.52.0/dist/index.js", "canvas-confetti": "https://ga.jspm.io/npm:canvas-confetti@1.9.0/dist/confetti.module.mjs", "ev-emitter": "https://ga.jspm.io/npm:ev-emitter@2.1.2/ev-emitter.js", "imagesloaded":
+        "https://ga.jspm.io/npm:imagesloaded@5.0.0/imagesloaded.js", "ahoy": "https://roomai.com/assets/ahoy-d491dff1db4cfab8109cffd2f55ede665dbf8e5326c4a305a7508e7277210071.js", "local-time": "https://ga.jspm.io/npm:local-time@2.1.0/app/assets/javascripts/local-time.js",
+        "controllers/application": "https://roomai.com/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js", "controllers/auto_submit_form_controller": "https://roomai.com/assets/controllers/auto_submit_form_controller-1d0f54f317ea16d58ec618f62a741c34f66b7a93c369509c17bc05ebee643963.js",
+        "controllers/autoclick_controller": "https://roomai.com/assets/controllers/autoclick_controller-f49e76270a036a469c8bbbc32ebc5bc4abb0b3e9291754485621346281f6d0c5.js", "controllers/autosize_controller": "https://roomai.com/assets/controllers/autosize_controller-8d0652942e75fb3d3d76d9b57ae520aefae32f746c8275d0a3153cb23945a2ce.js",
+        "controllers/color_palettes_controller": "https://roomai.com/assets/controllers/color_palettes_controller-b2be3912d6938830c48a5e6c6dd1210516ee9c7ab9889bf15eb08ebffe5400ad.js", "controllers/comparison_slider_controller": "https://roomai.com/assets/controllers/comparison_slider_controller-767c949f2ae35728a63d038c49ead4ba644741bb8b11de49493d10d9f7307ed5.js",
+        "controllers/confetti_controller": "https://roomai.com/assets/controllers/confetti_controller-4086c428fd747bebd48e0aeed7f2f1501f8971a3343e01bcd70e26c590826d36.js", "controllers/grid_controller": "https://roomai.com/assets/controllers/grid_controller-626361685a17afd400bbbdb2dea744e3258efb7662fb61fc092ce2a749dbe64c.js",
+        "controllers/hello_controller": "https://roomai.com/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js", "controllers/image_dimensions_controller": "https://roomai.com/assets/controllers/image_dimensions_controller-c78da140c005c88c7ad6eaa3a44afffd4492921e2a02a9f99e9923afc389da3e.js",
+        "controllers/image_loader_controller": "https://roomai.com/assets/controllers/image_loader_controller-32ab33bea6f85bfdad4838f8e32434f7f938a41266facb5621124048ff446f83.js", "controllers/image_preview_controller": "https://roomai.com/assets/controllers/image_preview_controller-ff91fc30777c58d3c4fb3c7557e93574516aca648d8a9a286e076df8d9f9ae72.js",
+        "controllers": "https://roomai.com/assets/controllers/index-78fbd01474398c3ea1bffd81ebe0dc0af5146c64dfdcbe64a0f4763f9840df28.js", "controllers/limit_checkboxes_controller": "https://roomai.com/assets/controllers/limit_checkboxes_controller-7e151ddcba07e299c3ed549093fe007356dffce5fa63baf47ac9d9814d72260e.js",
+        "controllers/masonry_controller": "https://roomai.com/assets/controllers/masonry_controller-238c041b2a569e1356e763ef43a557cb55000c60bea785965af64e6b7880dc5b.js", "controllers/native_sharing_controller": "https://roomai.com/assets/controllers/native_sharing_controller-05f530851bd7d5643a834d3d47de3dc7bd9da19609c00899392372a54881b7ab.js",
+        "controllers/pricing_controller": "https://roomai.com/assets/controllers/pricing_controller-533f62c28cd7704f098428c6c15e2f9e5bfe54bf7eec6230e8e643121b467d7b.js", "controllers/query_count_controller": "https://roomai.com/assets/controllers/query_count_controller-0ae43220d61c92c71c4dca7085c56b7c0d0144080c40877f2143f7d02bf09fb7.js",
+        "controllers/quotes_controller": "https://roomai.com/assets/controllers/quotes_controller-05decee35ae1a78815a58275bc799106cc44f71a08562cd505f53d02ad82760e.js", "controllers/range_slider_controller": "https://roomai.com/assets/controllers/range_slider_controller-f6d82fd7ad8ac1cb256bfe38d7b9a059d4d66efc0aa9c8147597b97f9251c174.js",
+        "controllers/remove_element_controller": "https://roomai.com/assets/controllers/remove_element_controller-98eec67ee9eb16068a74cc567f6b4d6f3728d5575d6018affba3371b2230f2ae.js", "controllers/responsive_grid_controller": "https://roomai.com/assets/controllers/responsive_grid_controller-56f4de1559128e5722f2b98051a384332b75dd2102e44961906399bce6bcf9dc.js",
+        "controllers/reveal_controller": "https://roomai.com/assets/controllers/reveal_controller-cf0de1af21c82b1e45d5f00d03b8ae8e3bb3884c859e0ce4fc9a96faa8302e2f.js", "controllers/sticky_controller": "https://roomai.com/assets/controllers/sticky_controller-ca5aae052b30f150e88bb362d83f217c99f234711d934eaf846380608fa72264.js",
+        "controllers/submit_form_controller": "https://roomai.com/assets/controllers/submit_form_controller-9d2923e1805ea9595d0cfec971e7eb64e73cd9cd780ac1c46d13095545533410.js", "controllers/submit_shortcut_controller": "https://roomai.com/assets/controllers/submit_shortcut_controller-37f1059367fdc66d30b8190d5eb65fa806c45c8bec8cc622643d4a0d6a637c1c.js",
+        "controllers/sync_videos_controller": "https://roomai.com/assets/controllers/sync_videos_controller-4d4f74b2e04d3b06797af00d5ee3c27b37ffb19c68f66f04d95acc2816ff1f7d.js", "controllers/timed_toggle_controller": "https://roomai.com/assets/controllers/timed_toggle_controller-22dad9b73286c1f77a9b4b95d0f081e2d5e0d1ba6f3158055b482e88ad7aa2d2.js",
+        "controllers/tracking_gradient_controller": "https://roomai.com/assets/controllers/tracking_gradient_controller-9d5b6cb69a0089a4582e4ed8a07d1637153747be5ffddea01443a84d88263fab.js", "controllers/turbo_modal_controller": "https://roomai.com/assets/controllers/turbo_modal_controller-f58982b2915f767949245651ed082e4fa51f003f38ef50b1f64fa8b877dec82b.js",
+        "controllers/wizard_controller": "https://roomai.com/assets/controllers/wizard_controller-a1fd4038f64ba4d468de5d270336898957223cf0e407294be485087b245ceefc.js" } }
+    </script>
+    <link rel="modulepreload" href="https://roomai.com/assets/application-148ad0fd22331e553c7b7dab43b8d60226ba2f2506d98fd1cbd4ae490c049715.js">
+    <link rel="modulepreload" href="https://roomai.com/assets/turbo.min-ea591e8a3d614b8a69205bdbc533ce97c24c328002ed5b27c50c31ebfd664bef.js">
+    <link rel="modulepreload" href="https://roomai.com/assets/stimulus.min-e6c8abed9ee6544dc446ae5d59da0036d2746c3297672bfac90f9c29b4f00be0.js">
+    <link rel="modulepreload" href="https://roomai.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js">
+    <script src="https://roomai.com/assets/es-module-shims.min-8cc3d4f027093fb134c74962db0f0c5da21e61f58fff94e398e2877708c1f54d.js" async="async" data-turbo-track="reload"></script>
+    <script type="module">import "application"</script>
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-532FGWF');
+    </script>
+
+</head>
+
+<body class="bg-gray-950 bg-grid-lines text-white">
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-532FGWF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <turbo-frame id="new_demo">
+        <div class="sm:h-screen sm:flex sm:justify-center sm:max-w-4xl sm:mx-auto sm:p-8">
+            <form class="min-h-screen sm:min-h-0 sm:w-full sm:border sm:border-gray-800 sm:rounded-lg sm:bg-gray-900 sm:overflow-auto" id="new_demo" data-controller="wizard image-preview set-input-value" enctype="multipart/form-data" action="/demos" accept-charset="UTF-8"
+                method="post"><input type="hidden" name="authenticity_token" value="J_Vr_rfr_b2IK9sG9Isb_ebqX_VOrgsLQ-Lt90pixKmSAVVs08G69j9i5vyD25GEz5PHz2eCGJXF7GFdj1KUwA" autocomplete="off" /><button name="signup_method" type="submit" value="email" class="hidden">Submit</button>
+                <div class="flex flex-col h-screen sm:h-full" data-controller="limit-checkboxes" data-limit-checkboxes-limit-value="5" data-wizard-target="step">
+                    <div class="px-4 py-4 border-b border-gray-700 text-lg text-center bg-gray-950">
+                        <div class="font-bold text-xl">What's your design style?</div>
+                        <div class="text-gray-400">You can choose up to 5 styles</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="responsive-grid gap-2" style="--min-width: 130px">
+                            <input type="hidden" name="demo[generation_attributes][room_style_ids][]" value autocomplete="off" />
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="1" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_1" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_1"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/minimalist-14b86b09fd2c3e6e1d181c6a1ef10ed0bee52c999a282a36f7800e29df62290f.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Minimalist
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="2" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_2" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_2"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/scandinavian-1eae2d433646586260b32be1616602a316c6ce1d2bb0da2ed81111ffe7b33b99.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Scandinavian
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="3" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_3" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_3"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/industrial-21e6223e7dd16c9ad0acbf59e2d2e714eea2b938093a36bdf6c12a7acc944a26.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Industrial
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="4" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_4" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_4"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/mid_century_modern-c8260a971c98f07e4cfe79ce4acd6d6910f503cafdf9dd9a586e65b6b379bb8b.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Mid-Century Modern
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="5" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_5" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_5"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/bohemian-6e41965fc8052007aa278262001d23185bfbca027d8a2cd32ec3a21b2fb62d58.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Bohemian
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="6" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_6" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_6"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/art_deco-c96bc2e27d50b11b9a1766667f5928967a8011fb35a38c132f9d43650ef25390.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Art Deco
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="7" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_7" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_7"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/coastal-696885a866237d69f19abac19ad1e9407c982690c8dcceb322aeb8c12e535e33.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Coastal
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="8" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_8" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_8"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/farmhouse-5aaf72b06cdee41537e0ac4015ca1a105421c1a3a3181ea36234e1ba15f43e57.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Farmhouse
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="9" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_9" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_9"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/traditional-20260d20ef1146a36254a13b42870495e13e5d58b8dbeaba591388710b297283.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Traditional
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="16" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_16" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_16"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/french_country-3a3842358901ab0bc76afe26dcef47ddc2c5adb773a5e33d694f336fa58130aa.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+French Country
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="26" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_26" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_26"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/moroccan-d8708a1c140c78c156317b3907b64b9806b87c514aaef7b136f44784b39a04b6.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Moroccan
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="10" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_10" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_10"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/modern-9e0f6e0a6358e09bb3698fc470b471af3fd3fc5074fe86054f96def790fe8812.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Modern
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="11" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_11" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_11"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/transitional-b50ff69d10403ae6405e9c3b7e148ddf2826964e8d257c097d4c75ce5be9fdf1.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Transitional
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="12" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_12" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_12"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/shabby_chic-255c04eebe8871dfb1a8c2f148984d53043ca30b2a6ae2e6a0eaceab56ce3c33.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Shabby Chic
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="13" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_13" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_13"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/japanese_zen-67b3bd30fcd31ea2e0cc78ac4be86b469188bdf71f43e0663d41e970d142ca76.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Japanese Zen
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="14" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_14" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_14"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/contemporary-3288c66c06eff8b198e797229388547038b7d625e1a04b3fd4a1ea688b739df2.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Contemporary
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="15" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_15" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_15"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/gothic-e40104de7e34092d5ee097a02ea7ac8e111dda6b82f38e96ce839edd262e3409.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Gothic
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="17" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_17" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_17"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/hollywood_regency-7784b67e50bffe6511e4f64f370c0225928dde0661b33f95171543d79bb01135.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Hollywood Regency
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="18" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_18" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_18"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/rustic-58f83f33986fa10a2f002891504c81296699e446a11a22461d92d1bab5b3af5a.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Rustic
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="19" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_19" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_19"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/southwestern-4698ba1a44d9311e4dfea73f815906a97aa8173530be4bd3414c5c823a3ad576.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Southwestern
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="20" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_20" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_20"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/victorian-4705f6c1e03d1c87c51dd6c3570bd846a64956b7264497803739bbd3fcfeb9fb.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Victorian
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="21" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_21" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_21"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/steampunk-c3761ae17ccf2b113a85a3b7a1db7d58a87ccbab41e0f0f7b8da2ba366b66727.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Steampunk
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="22" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_22" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_22"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/biophilic-101948a0c6cf5c74a463aa2e8e3231ea2cab6d6b8457d1344a99d33e30cfd888.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Biophilic
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="23" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_23" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_23"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/futuristic-a5cad05724dbb23c87b34b9941b4dcd18bad3068a5cf45de52db8d0ab73066a3.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Futuristic
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="24" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_24" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_24"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/maximalist-b395a2650e44b0b7bdc126ae580716359ae87461e7c3a94685155c5ad7b7a4d6.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Maximalist
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="25" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_25" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_25"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/pop_art-79e2f82cc07978462f8ef35ab0153568ed7b64a7f387e563fb693a9949e01422.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Pop Art
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="27" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_27" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_27"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/cosmic_chic-c185f1c8d06cbfeb4c702b87275279375f3decd26d02b109be2026679f78828d.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Cosmic Chic
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="28" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_28" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_28"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/wabi_sabi-01bfbf24c59e01f107610b68022347e3ad3e1c6c4828fb04e7131f71b08f736f.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Wabi-Sabi
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="29" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_29" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_29"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/tropical-0c7571279adee61611fd24584c5cb832576abab2cfce3ba252e38446bf041634.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Tropical
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="30" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_30" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_30"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/vintage_glam-ee888e198ae8c4f767909ca9a3fd8274058d851487e73e1fab411b27da0917f8.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Vintage Glam
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="31" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_31" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_31"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/cyberpunk-5841f3a1ac55c20c9390117428d82afcbc128666200104fe68fdac8b6f82df78.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Cyberpunk
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="32" checked="checked" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_32"
+                                />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_32"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/psychedelic-ed067f955f7ac9c0748abe614b368023853586cda004eabe52a115155bcd7cd1.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Psychedelic
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="33" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_33" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_33"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/surrealist-070039b2ccbdf2aeb26e1ce660087373d5c48637cb27410b14e0f4c65008f5aa.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Surrealist
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="34" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_34" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_34"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/post_apocalyptic-f1a2d88a757a73ac9bd4afab99e4b0d1dc20565262f57e8bba344877d67bc658.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Post-Apocalyptic
+</div>
+</label></div>
+                            <div class="block">
+                                <input class="hidden peer" data-limit-checkboxes-target="checkbox" data-action="limit-checkboxes#check" type="checkbox" value="35" name="demo[generation_attributes][room_style_ids][]" id="demo_generation_attributes_room_style_ids_35" />
+                                <label class="h-full w-full text-white aspect-[1/1] flex relative rounded-lg group cursor-pointer hover:[&amp;&gt;.select-none]:ring-2 hover:[&amp;&gt;.select-none]:ring-white/50 peer-checked:[&amp;&gt;.select-none]:ring-2 peer-checked:[&amp;&gt;.select-none]:ring-teal-400 peer-checked:[&amp;&gt;.gradient-bg]:gradient-bg-checked"
+                                    for="demo_generation_attributes_room_style_ids_35"><img class="block bg-gray-500 absolute inset-0 rounded-lg" src="https://roomai.com/assets/styles/candy_land-83a6ca030579ce5cfded791f64ce79d701a3f3fbe272d9ffd1fbdc8df1a91c47.jpg" />
+<div class="select-none absolute inset-0 gradient-bg text-center text-base font-medium text-shadow-md px-1 py-3 leading-5 rounded-lg transition-all duration-200 ring-inset ring-2 ring-white/20">
+Candy Land
+</div>
+</label></div>
+                        </div>
+                    </div>
+                    <div class="mt-auto sticky bottom-0 p-4 border-t backdrop-blur-lg border-white/10 bg-gray-950/50">
+                        <button class="group font-medium transition-colors duration-200 block w-full text-center bg-teal-600 disabled:bg-gray-600 hover:bg-teal-500 border border-teal-400 disabled:border-gray-400 disabled:text-gray-400 hover:border-teal-300 p-3 rounded-lg" data-action="wizard#nextPage:prevent"
+                            data-limit-checkboxes-target="button" disabled type="button">
+<span class="group-disabled:hidden">Continue with these styles</span>
+<span class="hidden group-disabled:inline">Please select up to 5 styles</span>
+</button>
+                    </div>
+                </div>
+                <div class="hidden flex flex-col h-screen sm:h-full" data-wizard-target="step">
+                    <div class="p-4 border-b border-gray-700 text-lg text-center bg-gray-950">
+                        <div class="text-center">
+                            <div class="font-bold text-xl">Upload a photo of your room</div>
+                            <div class="text-gray-400">We'll redesign it with AI</div>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 text-lg">
+                        <ul class="flex flex-col gap-1 my-4">
+                            <li class="rounded bg-gray-900 p-2 px-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-5 h-5 text-teal-500 shrink-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+</svg> Take a picture in daylight
+                            </li>
+                            <li class="rounded bg-gray-900 p-2 px-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-5 h-5 text-teal-500 shrink-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+</svg> Hide non-essential items
+                            </li>
+                            <li class="rounded bg-gray-900 p-2 px-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-5 h-5 text-teal-500 shrink-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+</svg> Use the regular 1x lens
+                            </li>
+                        </ul>
+                        <div class="flex flex-col gap-2 mt-auto" data-image-preview-target="placeholder">
+                            <input data-image-preview-target="widthInput" autocomplete="off" type="hidden" name="demo[generation_attributes][width]" id="demo_generation_attributes_width" />
+                            <input data-image-preview-target="heightInput" autocomplete="off" type="hidden" name="demo[generation_attributes][height]" id="demo_generation_attributes_height" />
+                            <div class="relative flex gap-3 items-center justify-center rounded-lg bg-blue-800 border border-blue-600 p-6">
+                                <input accept="image/jpeg,image/png" class="cursor-pointer absolute inset-0 h-full w-full opacity-0 focus:outline-none" data-action="image-preview#readURL" data-image-preview-target="fileInput" data-direct-upload-url="https://roomai.com/rails/active_storage/direct_uploads"
+                                    type="file" name="demo[generation_attributes][generatable_attributes][input_image]" id="demo_generation_attributes_generatable_attributes_input_image" />
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 h-8 text-blue-200">
+<path d="M4.75 3A1.75 1.75 0 003 4.75v2.752l.104-.002h13.792c.035 0 .07 0 .104.002V6.75A1.75 1.75 0 0015.25 5h-3.836a.25.25 0 01-.177-.073L9.823 3.513A1.75 1.75 0 008.586 3H4.75zM3.104 9a1.75 1.75 0 00-1.673 2.265l1.385 4.5A1.75 1.75 0 004.488 17h11.023a1.75 1.75 0 001.673-1.235l1.384-4.5A1.75 1.75 0 0016.896 9H3.104z"></path>
+</svg> Browse photos
+                            </div>
+                        </div>
+                        <div class="hidden bg-gray-800 w-full relative rounded-lg overflow-hidden" data-image-preview-target="outputContainer">
+                            <img class="block w-full h-auto object-contain object-center rounded-lg max-h-96" data-image-preview-target="output" src="/">
+                            <button class="group hidden absolute top-0 right-0 p-2" data-action="image-preview#reset" data-image-preview-target="resetButton" type="button">
+<div class="group-hover:bg-white text-black rounded-full p-1 flex items-center justify-center bg-white/80">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5">
+<path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"></path>
+</svg>
+</div>
+</button>
+                        </div>
+                    </div>
+                    <div class="mt-auto sticky bottom-0 p-4 border-t backdrop-blur-lg border-white/10 bg-gray-950/50">
+                        <button class="group font-medium transition-colors duration-200 block w-full text-center bg-teal-600 disabled:bg-gray-600 hover:bg-teal-500 border border-teal-400 disabled:border-gray-400 disabled:text-gray-400 hover:border-teal-300 p-3 rounded-lg" data-action="wizard#nextPage:prevent"
+                            data-image-preview-target="submitButton" disabled type="button">
+<span class="group-disabled:hidden">Generate design ideas</span>
+<span class="hidden group-disabled:inline">Please select a photo</span>
+</button>
+                    </div>
+                </div>
+                <div class="hidden flex flex-col h-screen sm:h-full" data-wizard-target="step">
+                    <div class="p-4 border-b border-gray-700 text-lg text-center bg-gray-950">
+                        <div class="font-bold text-xl">Create a free account</div>
+                        <div class="text-gray-400">We'll email you the results</div>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-900 p-8 gap-2 mx-auto max-w-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-10 h-10 text-teal-400">
+<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+</svg>
+                        <p>Please continue by creating a free account and see the results.</p>
+                        <p class="text-gray-500">Sorry, I know it's annoying. But I need to make sure people don't abuse the system as it's expensive for me to run this free demo.</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex flex-col gap-3">
+                            <button name="signup_method" type="submit" value="google" class="text-base font-medium transition-all duration-200 flex items-center justify-center w-full bg-gray-200 ring-inset ring-1 ring-white text-gray-900 gap-3 py-2 pl-3 pr-4 rounded-lg ring-1 shadow-md hover:bg-white"
+                                formnovalidate="formnovalidate" data-action="set-input-value#setInputValue"><img class="h-6 w-6 object-contain" src="https://roomai.com/assets/icons/social/google-7c4098c96828701e24059eee894d2eef077940704ea8d110e95eee43a8bf745f.svg" />
+Continue with Google
+</button>
+                            <div class="relative flex h-14 items-center justify-center -mx-4">
+                                <hr class="grow border-gray-800 h-[2px]">
+                                <h3 class="w-16 shrink-0 text-center uppercase text-sm text-gray-500 tracking-wider">or</h3>
+                                <hr class="grow border-gray-800 h-[2px]">
+                            </div>
+                        </div>
+                        <div>
+                            <input placeholder="Enter your email address" required="required" autocomplete="email" class="bg-gray-800 w-full rounded-lg px-3 py-3 placeholder:text-gray-500 focus:placeholder:text-gray-600 border-gray-700 hover:border-gray-600 focus:border-teal-500 focus:ring-teal-500 transition-colors duration-200"
+                                type="email" name="demo[user_attributes][email]" id="demo_user_attributes_email" />
+                        </div>
+                        <div>
+                            <div class="relative mt-4">
+                                <button name="signup_method" type="submit" value="email" class="group font-medium mt-4 bg-teal-600 ring-1 ring-inset ring-teal-500 cursor-pointer w-full rounded-lg px-4 py-3 text-white disabled:text-teal-100 hover:bg-teal-500 disabled:bg-teal-500 hover:ring-teal-400 disabled:ring-teal-400 transition-colors duration-200"><span class="group-disabled:hidden">Receive images via email</span>
+<span class="hidden group-disabled:inline">Processing…</span>
+</button></div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-6">
+                            By continuing, you acknowledge that you have read and agree to the <a class="text-gray-400 underline" target="_blank" href="/terms-of-service">Terms of Service</a> and <a class="text-gray-400 underline" target="_blank" href="/privacy-policy">Privacy Policy</a>.
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </turbo-frame>
+</body>
+
+</html>

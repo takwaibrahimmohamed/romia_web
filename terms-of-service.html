@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Room AI</title>
+    <meta name="description" content="Try out 40+ interior design styles for your home. No downloads or installs required. Free to try." />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:title" content="Room AI" />
+    <meta property="og:description" content="Restyle your room with AI – Try for free" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="836" />
+    <meta property="og:type" content="product" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@roomai_com" />
+    <meta name="twitter:creator" content="@marckohlbrugge" />
+    <meta name="twitter:title" content="Room AI" />
+    <meta name="twitter:description" content="Restyle your room with AI – Try for free" />
+    <meta name="url" content="https://roomai.com/" />
+    <meta property="og:image" content="https://roomai.com/assets/social/twitter-card-029ec5c3a180e9039d3c3fcfe302be9d85cb8fc2ce3073ee8ab040393c018181.png" />
+    <meta property="twitter:image" content="https://roomai.com/assets/social/twitter-card-029ec5c3a180e9039d3c3fcfe302be9d85cb8fc2ce3073ee8ab040393c018181.png" />
+    <meta property="og:video" content="https://roomai.com/assets/roomai-27316d5f36165214a9364eb63c0117890207f895be030a898962d746731afc8e.mp4" type="video/mp4" width="1280" height="1016" />
+    <link rel="icon" type="image/x-icon" href="https://roomai.com/assets/favicon-1c045dbfe155740a64b3f6ee20f32bfbd3256845d2e21d12795e7cd73bb55ac5.ico" />
+    <link href="https://roomai.com/assets/apple-touch-icon-d3465bbf1f672485304b1b9c17be0c575c1f85e56c09d04617260e1729e4a7d5.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="https://roomai.com/assets/apple-touch-icon-120x120-21fa757db4cd7c6ad2fd8d6f8c16aa134c67ca0462a53eb7233dcc0616532801.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="https://roomai.com/assets/favicon-32x32-9b9438298fe6ecc438c4768c363530bf9a5612c119782c0dee1db3b02a798cef.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="https://roomai.com/assets/favicon-16x16-5acdaa537d0d52a77be045b20a6f20bb73e4e6b1d4d0e324ba931b2403285ee5.png" rel="icon" sizes="16x16" type="image/png">
+    <link rel="preload" href="https://roomai.com/assets/polysans/neutral-f9189954098a15413d14187780f6d96e484af26c18b09fcbffa64b3f577506b2.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://roomai.com/assets/polysans/median-2cc4db87b0b1e35537d21bd9e96dd5b05c3ed677870f946cad942bb27ab5e748.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://roomai.com/assets/polysans/bulky-3b3d00b133c63cdc3b85421f2c923c2edb578af9e27c3c5f2f9ec7981170b373.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://roomai.com/assets/kalam/regular-edbf5950cd8c859ace6e0e29b9372e53cef71cba0e900a47cd9f5c55ddea2f50.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="ZMbef3VzwmH2drXGY0VisLlZzy6Myj5obLtKYnCiotD--eLcSpPo8nkdOG29zGPORqUtg5jyBWXhUcZ1akYxLQ" />
+    <link rel="stylesheet" href="https://roomai.com/assets/tailwind-8c7beda11f2a43a257a66c83e98cc75b2b084125f8592451d679bdfc30ab8962.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="https://roomai.com/assets/inter-font-95bae7e5d612a17f92905fe8c37ca3885b798e95da071bd3e44d8cf7e6a70291.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="https://roomai.com/assets/application-7097d29b415b95608a77148ab880feb03e410a846cd92b37bc1a614ff3b68a15.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{ "imports": { "application": "https://roomai.com/assets/application-148ad0fd22331e553c7b7dab43b8d60226ba2f2506d98fd1cbd4ae490c049715.js", "@hotwired/turbo-rails": "https://roomai.com/assets/turbo.min-ea591e8a3d614b8a69205bdbc533ce97c24c328002ed5b27c50c31ebfd664bef.js",
+        "@hotwired/stimulus": "https://roomai.com/assets/stimulus.min-e6c8abed9ee6544dc446ae5d59da0036d2746c3297672bfac90f9c29b4f00be0.js", "@hotwired/stimulus-loading": "https://roomai.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+        "minimasonry": "https://ga.jspm.io/npm:minimasonry@1.3.2/build/minimasonry.esm.js", "autosize": "https://ga.jspm.io/npm:autosize@6.0.1/dist/autosize.esm.js", "@rails/activestorage": "https://roomai.com/assets/fixed-activestorage.esm-f2e55e0f1d68c6081e7c735a76cd5fd95ffa1fdc1fbc5a3be9d251cb6294c8c4.js",
+        "stimulus-use": "https://ga.jspm.io/npm:stimulus-use@0.52.0/dist/index.js", "canvas-confetti": "https://ga.jspm.io/npm:canvas-confetti@1.9.0/dist/confetti.module.mjs", "ev-emitter": "https://ga.jspm.io/npm:ev-emitter@2.1.2/ev-emitter.js", "imagesloaded":
+        "https://ga.jspm.io/npm:imagesloaded@5.0.0/imagesloaded.js", "ahoy": "https://roomai.com/assets/ahoy-d491dff1db4cfab8109cffd2f55ede665dbf8e5326c4a305a7508e7277210071.js", "local-time": "https://ga.jspm.io/npm:local-time@2.1.0/app/assets/javascripts/local-time.js",
+        "controllers/application": "https://roomai.com/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js", "controllers/auto_submit_form_controller": "https://roomai.com/assets/controllers/auto_submit_form_controller-1d0f54f317ea16d58ec618f62a741c34f66b7a93c369509c17bc05ebee643963.js",
+        "controllers/autoclick_controller": "https://roomai.com/assets/controllers/autoclick_controller-f49e76270a036a469c8bbbc32ebc5bc4abb0b3e9291754485621346281f6d0c5.js", "controllers/autosize_controller": "https://roomai.com/assets/controllers/autosize_controller-8d0652942e75fb3d3d76d9b57ae520aefae32f746c8275d0a3153cb23945a2ce.js",
+        "controllers/color_palettes_controller": "https://roomai.com/assets/controllers/color_palettes_controller-b2be3912d6938830c48a5e6c6dd1210516ee9c7ab9889bf15eb08ebffe5400ad.js", "controllers/comparison_slider_controller": "https://roomai.com/assets/controllers/comparison_slider_controller-767c949f2ae35728a63d038c49ead4ba644741bb8b11de49493d10d9f7307ed5.js",
+        "controllers/confetti_controller": "https://roomai.com/assets/controllers/confetti_controller-4086c428fd747bebd48e0aeed7f2f1501f8971a3343e01bcd70e26c590826d36.js", "controllers/grid_controller": "https://roomai.com/assets/controllers/grid_controller-626361685a17afd400bbbdb2dea744e3258efb7662fb61fc092ce2a749dbe64c.js",
+        "controllers/hello_controller": "https://roomai.com/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js", "controllers/image_dimensions_controller": "https://roomai.com/assets/controllers/image_dimensions_controller-c78da140c005c88c7ad6eaa3a44afffd4492921e2a02a9f99e9923afc389da3e.js",
+        "controllers/image_loader_controller": "https://roomai.com/assets/controllers/image_loader_controller-32ab33bea6f85bfdad4838f8e32434f7f938a41266facb5621124048ff446f83.js", "controllers/image_preview_controller": "https://roomai.com/assets/controllers/image_preview_controller-ff91fc30777c58d3c4fb3c7557e93574516aca648d8a9a286e076df8d9f9ae72.js",
+        "controllers": "https://roomai.com/assets/controllers/index-78fbd01474398c3ea1bffd81ebe0dc0af5146c64dfdcbe64a0f4763f9840df28.js", "controllers/limit_checkboxes_controller": "https://roomai.com/assets/controllers/limit_checkboxes_controller-7e151ddcba07e299c3ed549093fe007356dffce5fa63baf47ac9d9814d72260e.js",
+        "controllers/masonry_controller": "https://roomai.com/assets/controllers/masonry_controller-238c041b2a569e1356e763ef43a557cb55000c60bea785965af64e6b7880dc5b.js", "controllers/native_sharing_controller": "https://roomai.com/assets/controllers/native_sharing_controller-05f530851bd7d5643a834d3d47de3dc7bd9da19609c00899392372a54881b7ab.js",
+        "controllers/pricing_controller": "https://roomai.com/assets/controllers/pricing_controller-533f62c28cd7704f098428c6c15e2f9e5bfe54bf7eec6230e8e643121b467d7b.js", "controllers/query_count_controller": "https://roomai.com/assets/controllers/query_count_controller-0ae43220d61c92c71c4dca7085c56b7c0d0144080c40877f2143f7d02bf09fb7.js",
+        "controllers/quotes_controller": "https://roomai.com/assets/controllers/quotes_controller-05decee35ae1a78815a58275bc799106cc44f71a08562cd505f53d02ad82760e.js", "controllers/range_slider_controller": "https://roomai.com/assets/controllers/range_slider_controller-f6d82fd7ad8ac1cb256bfe38d7b9a059d4d66efc0aa9c8147597b97f9251c174.js",
+        "controllers/remove_element_controller": "https://roomai.com/assets/controllers/remove_element_controller-98eec67ee9eb16068a74cc567f6b4d6f3728d5575d6018affba3371b2230f2ae.js", "controllers/responsive_grid_controller": "https://roomai.com/assets/controllers/responsive_grid_controller-56f4de1559128e5722f2b98051a384332b75dd2102e44961906399bce6bcf9dc.js",
+        "controllers/reveal_controller": "https://roomai.com/assets/controllers/reveal_controller-cf0de1af21c82b1e45d5f00d03b8ae8e3bb3884c859e0ce4fc9a96faa8302e2f.js", "controllers/sticky_controller": "https://roomai.com/assets/controllers/sticky_controller-ca5aae052b30f150e88bb362d83f217c99f234711d934eaf846380608fa72264.js",
+        "controllers/submit_form_controller": "https://roomai.com/assets/controllers/submit_form_controller-9d2923e1805ea9595d0cfec971e7eb64e73cd9cd780ac1c46d13095545533410.js", "controllers/submit_shortcut_controller": "https://roomai.com/assets/controllers/submit_shortcut_controller-37f1059367fdc66d30b8190d5eb65fa806c45c8bec8cc622643d4a0d6a637c1c.js",
+        "controllers/sync_videos_controller": "https://roomai.com/assets/controllers/sync_videos_controller-4d4f74b2e04d3b06797af00d5ee3c27b37ffb19c68f66f04d95acc2816ff1f7d.js", "controllers/timed_toggle_controller": "https://roomai.com/assets/controllers/timed_toggle_controller-22dad9b73286c1f77a9b4b95d0f081e2d5e0d1ba6f3158055b482e88ad7aa2d2.js",
+        "controllers/tracking_gradient_controller": "https://roomai.com/assets/controllers/tracking_gradient_controller-9d5b6cb69a0089a4582e4ed8a07d1637153747be5ffddea01443a84d88263fab.js", "controllers/turbo_modal_controller": "https://roomai.com/assets/controllers/turbo_modal_controller-f58982b2915f767949245651ed082e4fa51f003f38ef50b1f64fa8b877dec82b.js",
+        "controllers/wizard_controller": "https://roomai.com/assets/controllers/wizard_controller-a1fd4038f64ba4d468de5d270336898957223cf0e407294be485087b245ceefc.js" } }
+    </script>
+    <link rel="modulepreload" href="https://roomai.com/assets/application-148ad0fd22331e553c7b7dab43b8d60226ba2f2506d98fd1cbd4ae490c049715.js">
+    <link rel="modulepreload" href="https://roomai.com/assets/turbo.min-ea591e8a3d614b8a69205bdbc533ce97c24c328002ed5b27c50c31ebfd664bef.js">
+    <link rel="modulepreload" href="https://roomai.com/assets/stimulus.min-e6c8abed9ee6544dc446ae5d59da0036d2746c3297672bfac90f9c29b4f00be0.js">
+    <link rel="modulepreload" href="https://roomai.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js">
+    <script src="https://roomai.com/assets/es-module-shims.min-8cc3d4f027093fb134c74962db0f0c5da21e61f58fff94e398e2877708c1f54d.js" async="async" data-turbo-track="reload"></script>
+    <script type="module">import "application"</script>
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-532FGWF');
+    </script>
+
+</head>
+
+<body class="bg-gray-950 bg-grid-lines text-white">
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-532FGWF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="min-h-screen flex flex-col">
+        <nav class="flex flex-row xsm:flex-row items-center gap-2 space-between py-2 sm:py-4 px-3 sm:px-6 text-lg border-b border-gray-800 sticky top-0 z-10 backdrop-blur-lg bg-gray-950/80">
+            <h1 class="sm:mr-12 shrink-0">
+                <a class="block" href="index.html"><img alt class="h-6 select-none hidden sm:block" src="https://roomai.com/assets/logo-tm-ee3cfe73454ddb84a39cce589111c734b2251bbbdb54108c55444c5870af8ce6.svg" />
+<img alt class="h-8 select-none block sm:hidden" src="https://roomai.com/assets/icon-5a4237e7e349fd97d9435125e080106222edac5dac4dfb77050ba7f282d2ffeb.svg" />
+</a>
+                <div class="sr-only">Room AI</div>
+            </h1>
+            <div class="hidden mx-auto flex gap-3">
+                <a class="text-gray-400 transition-colors duration-200 hover:text-white py-0 px-2 rounded whitespace-nowrap" href="pricing.html">Pricing</a>
+            </div>
+            <div class="flex items-center gap-2 ml-auto">
+                <a class="ml-auto font-medium text-white transition-colors duration-200 py-1 px-3 rounded border border-gray-700 hover:border-gray-500 hover:bg-gray-800 hover:text-white" href="start.html">Log in</a>
+                <a class="font-medium text-white transition-colors duration-200 py-1 px-3 rounded bg-teal-600 block hover:bg-teal-500 border border-teal-400 hover:border-teal-300" href="start.html">
+                    <div class="hidden sm:block">Design your interior</div>
+                    <div class="block sm:hidden">Start designing</div>
+                </a>
+            </div>
+        </nav>
+        <div class="relative mb-auto">
+            <div class="max-w-2xl mx-auto my-12 p-12 font-polysans font-light text-xl bg-gray-900 rounded-xl shadow-lg border border-gray-700">
+                <div class="text-gray-300 [&amp;&gt;p:not(:first-child)]:mt-3 [&amp;&gt;h2]:text-white [&amp;&gt;h2]:font-bold [&amp;&gt;h2]:mt-6">
+                    <h1 class="font-bold text-3xl text-white">Terms of Service for Room AI</h1>
+                    <p>Last updated: May 6th, 2023</p>
+                    <p>Welcome to Room AI, a service provided by Killbridge Ventures Pte. Ltd. ("Killbridge Ventures", "we", "us", or "our"). Room AI is a Software-as-a-Service (SaaS) platform that allows users to generate interior design images using artificial
+                        intelligence. By accessing and using our services, you ("user", "you", or "your") agree to be bound by these Terms of Service ("Terms"), which govern your access to and use of Room AI.</p>
+                    <h2>Scope of Services</h2>
+                    <p>Room AI provides users with the ability to generate interior design images using artificial intelligence. Our services are intended for both personal and commercial use, subject to the limitations outlined in these Terms and the specific
+                        subscription plan you are subscribed to.</p>
+                    <h2>Subscription Plans and Usage Rights</h2>
+                    <p>Room AI offers different subscription plans with varying usage rights. Your usage rights, including personal or commercial use of the images generated through our services, are dependent on the subscription plan you are subscribed
+                        to. It is your responsibility to ensure that your subscription plan aligns with your intended use of the generated images. Please refer to our pricing page for detailed information on the subscription plans and corresponding usage
+                        rights. We reserve the right to change subscription plans and pricing at any time. Although we will typically provide notice in advance of any price increases, you will have the option to cancel your subscription if you do not
+                        agree to the new pricing.</p>
+                    <h2>Authorized Access and Use</h2>
+                    <p>You are permitted to access and use Room AI solely through the website and as intended by us. You may not access or use our services in any automated manner, including but not limited to scraping, employing browser extensions, or utilizing
+                        any other methods that may put excessive strain on our computing or hosting resources. You are also prohibited from using the generated images or outputs for the purpose of training artificial intelligence models or creating a
+                        competing or similar service.</p>
+                    <h2>Copyright and Intellectual Property</h2>
+                    <p>The legal landscape surrounding the copyright and intellectual property rights of AI-generated images is still evolving and may be unclear in certain jurisdictions. To the extent permitted by applicable law, we grant you the rights
+                        to use the images generated through Room AI in accordance with your subscription plan. However, we make no representation or warranty regarding the uniqueness of the generated images.</p>
+                    <h2>User-Provided Content</h2>
+                    <p>By uploading images to Room AI, you retain all rights and ownership of the content you provide. However, you grant us a non-exclusive, royalty-free, worldwide license to use, reproduce, and modify your uploaded images for the purpose
+                        of providing our services, ensuring their quality, and enhancing our offerings. This may include using your images in an aggregated and anonymized manner to improve the performance of our artificial intelligence models, without
+                        disclosing your personal information. By uploading images, you represent and warrant that you have the necessary rights and permissions to use and share those images in the manner described in these Terms.</p>
+                    <h2>Data Storage and Deletion</h2>
+                    <p>While we strive to maintain the security and integrity of the data and images generated through our services, we cannot be held responsible for any loss of data or images that may occur. In the event that a user cancels their subscription,
+                        we reserve the right to delete any data or images associated with the user's account. We recommend that users regularly back up their generated images and data to ensure its preservation.</p>
+                    <h2>Indemnification</h2>
+                    <p>You agree to indemnify, defend, and hold harmless Killbridge Ventures, its affiliates, and their respective officers, directors, employees, and agents from and against any and all claims, liabilities, damages, losses, or expenses,
+                        including reasonable attorneys' fees and costs, arising out of or in any way connected with your access to or use of Room AI, including, but not limited to, claims related to copyright infringement or intellectual property rights.</p>
+                    <h2>Refunds</h2>
+                    <p>Our default policy is not to issue refunds due to the cost involved in generating images using artificial intelligence. However, we may consider refund requests on a case-by-case basis at our sole discretion. The decision to provide
+                        a partial or full refund, if any, will be made by Killbridge Ventures.</p>
+                    <h2>Acceptable Use</h2>
+                    <p>You agree to use Room AI only for generating images that are appropriate and lawful. You may not use our services to create, promote, or disseminate any images that:</p>
+                    <p>a. Contain sexually explicit or pornographic content;</p>
+                    <p>b. Promote violence or hatred towards individuals or groups based on race, ethnicity, religion, gender, disability, or any other protected characteristic;</p>
+                    <p>c. Violate any applicable laws or regulations, including but not limited to copyright, trademark, or intellectual property rights; or</p>
+                    <p>d. Are otherwise deemed inappropriate by Killbridge Ventures in its sole discretion.</p>
+                    <p>We reserve the right to remove or refuse access to any images that violate these Terms, and may terminate your access to Room AI if you are found to be in violation of these Terms.</p>
+                    <h2>Governing Law and Jurisdiction</h2>
+                    <p>These Terms and your use of Room AI are governed by the laws of Singapore. You agree to submit to the exclusive jurisdiction of the courts of Singapore to resolve any disputes arising out of or relating to these Terms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="p-8 sm:p-12 border-t border-gray-800 text-gray-400 bg-gray-900">
+        <section class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-20">
+            <div class="block">
+                <img alt="Room AI" class="h-6 object-contain" src="https://roomai.com/assets/logo-tm-ee3cfe73454ddb84a39cce589111c734b2251bbbdb54108c55444c5870af8ce6.svg" />
+                <p class="text-lg text-gray-100 my-4">Generate interior designs with&nbsp;AI.</p>
+                <p class="mt-2">
+                    &copy; 2024
+                    <div class="sm:whitespace-nowrap">Killbridge Ventures Pte. Ltd.</div>
+                </p>
+            </div>
+            <div class="block">
+                <h3 class="text-lg font-semibold text-gray-100">Legal</h3>
+                <div class="flex flex-col gap-1 mt-2">
+                    <a class="text-gray-400 hover:text-white hover:underline" href="terms-of-service.html">Terms of Service</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="privacy-policy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="block">
+                <h3 class="text-lg font-semibold text-gray-100">Links</h3>
+                <div class="flex flex-col gap-1 mt-2">
+                    <a class="text-gray-400 hover:text-white hover:underline" href="pricing.html">Pricing</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="start.html">Log in</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="/billing">Billing &amp; Invoices</a>
+                </div>
+            </div>
+            <div class="block">
+                <h3 class="text-lg font-semibold text-gray-100">Contact</h3>
+                <div class="flex flex-col gap-1 mt-2">
+                    <a class="text-gray-400 hover:text-white hover:underline" href="https://twitter.com/roomai_com">Twitter</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="mailto:team@roomai.com">Support (email)</a>
+                    <a class="text-gray-400 hover:text-white hover:underline" href="mailto:press@roomai.com">Press (email)</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
